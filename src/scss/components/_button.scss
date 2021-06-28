@@ -1,0 +1,11 @@
+.btn {
+    padding: 1.5rem 2rem;
+
+    &--show-modal {
+        background-image: $gradient-secondary;
+        border-radius: 3px;
+        color: $color-bg;
+        margin-left: 5rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+}
