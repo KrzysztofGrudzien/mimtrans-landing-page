@@ -20,11 +20,77 @@
     </head>
 
     <body>
+        <div class="timetable timetable--js hidden">
+            <div class="timetable__btn timetable__btn--close timetable__btn--js">x</div>
+            <article class="timetable__article">
+                <h2 class="timetable__title">Rozkład jazdy linii autobusowych</h2>
+                <ul class="timetable__list">
+                    <li class="timetable__item">
+                        <div class="timetable__icon timetable__icon--primary">M</div>
+                        <span class="timetable__description"
+                            ><strong>Mszczonów Rynek</strong> - Radziejowice - Krze - Żabia Wola - Siestrzeń - Nadarzyn
+                            - Janki - Raszyn - <strong>Warszawa P+R Al. Krakowska</strong></span
+                        >
+                        <div class="timetable__pdf">
+                            <a href="#"><img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" /></a>
+                        </div>
+                    </li>
+                    <li class="timetable__item">
+                        <div class="timetable__icon timetable__icon--secondary">S</div>
+                        <span class="timetable__description"
+                            ><strong>Piotrkowice</strong> - Bartoszówka - Skuły - Ciepłe - Kaleń - Zaręby - Ojchrzanów -
+                            Żelechów - <strong>Siestrzeń z przesiadką do/z Warszawy</strong></span
+                        >
+                        <div class="timetable__pdf"><img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" /></div>
+                    </li>
+                    <li class="timetable__item">
+                        <div class="timetable__icon timetable__icon--tertiary">A</div>
+                        <span class="timetable__description"
+                            ><strong>Adamów Parcel</strong> - Parcela - Krze - Radziejowice - Korytów -
+                            <strong>Żyrardów Dw. PKP</strong></span
+                        >
+                        <div class="timetable__pdf"><img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" /></div>
+                    </li>
+                </ul>
+            </article>
+            <article class="timetable__article">
+                <h2 class="timetable__title">Taryfa biletowa na liniach</h2>
+                <ul class="timetable__list">
+                    <li class="timetable__item">
+                        <div class="timetable__icon timetable__icon--primary">M</div>
+                        <span class="timetable__description"
+                            ><strong>Mszczonów Rynek</strong> - Radziejowice - Krze - Żabia Wola - Siestrzeń - Nadarzyn
+                            - Janki - Raszyn - <strong>Warszawa P+R Al. Krakowska</strong></span
+                        >
+                        <div class="timetable__pdf">
+                            <img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" />
+                        </div>
+                    </li>
+                    <li class="timetable__item">
+                        <div class="timetable__icon timetable__icon--secondary">S</div>
+                        <span class="timetable__description"
+                            ><strong>Piotrkowice</strong> - Bartoszówka - Skuły - Ciepłe - Kaleń - Zaręby - Ojchrzanów -
+                            Żelechów - <strong>Siestrzeń z przesiadką do/z Warszawy</strong></span
+                        >
+                        <div class="timetable__pdf"><img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" /></div>
+                    </li>
+                    <li class="timetable__item timetable__item--info">
+                        <span class="timetable__description"
+                            ><strong
+                                >Informacja o sprzedaży biletów miesięcznych na komunikację autobusową na miesiąc
+                                czerwiec</strong
+                            ></span
+                        >
+                        <div class="timetable__pdf"><img src="../assets/img/pdf.svg" alt="ikona pobierz pdf" /></div>
+                    </li>
+                </ul>
+            </article>
+        </div>
         <header class="header">
             <div class="container container--flex">
                 <img src="../assets/img/logo.svg" alt="Mimtrans logo" class="logo" id="logo" />
                 <nav class="nav">
-                    <ul class="nav__links">
+                    <ul class="nav__links nav__links--js">
                         <li class="nav__item">
                             <a class="nav__link section--1" href="#section--1">Home</a>
                         </li>
@@ -44,7 +110,7 @@
                             <a class="nav__link" href="#section--6">Kontakt</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link nav__link--btn btn--show-modal" href="#">
+                            <a class="nav__link nav__link--btn btn--show-modal btn--show-modal--js" href="#">
                                 <img
                                     src="../assets/img/schedule.svg"
                                     alt="schedule icon"
