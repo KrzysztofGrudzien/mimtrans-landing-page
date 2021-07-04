@@ -1,0 +1,83 @@
+.timetable {
+    background-color: $color-bg;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: margin-top 0.3s ease-in-out;
+    width: 90%;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 2.5rem;
+    }
+
+    &__article {
+        padding: 2.2rem;
+        width: 50%;
+    }
+
+    &__icon {
+        color: $color-bg;
+        font-size: 8.5rem;
+        font-weight: 500;
+        height: 12rem;
+        line-height: 12rem;
+        text-align: center;
+        width: 12rem;
+
+        &--primary {
+            background-image: $gradient-primary;
+        }
+
+        &--secondary {
+            background-image: $gradient-secondary;
+        }
+
+        &--tertiary {
+            background-image: $gradient-tertiary;
+        }
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        width: 60%;
+    }
+
+    &__item {
+        align-items: center;
+        border: solid 1px darken($color-bg, 10);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        &--info {
+            padding: 2rem 0 2rem 2rem;
+        }
+    }
+
+    &__pdf {
+        cursor: pointer;
+        text-align: right;
+        width: 10%;
+    }
+
+    &__btn {
+        background-color: $color-secondary;
+        border-radius: 50%;
+        color: $color-bg;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 600;
+        height: 4rem;
+        position: absolute;
+        text-align: center;
+        top: -2rem;
+        right: -2rem;
+        width: 4rem;
+    }
+}
