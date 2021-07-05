@@ -1,6 +1,7 @@
 .section {
     border-bottom: 1px solid darken($color-bg, 10);
     padding-bottom: 3rem;
+    transition: all 0.7s ease-out;
 
     &--home {
         display: flex;
