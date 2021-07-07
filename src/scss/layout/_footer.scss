@@ -10,12 +10,46 @@
     &__text {
         color: $color-bg;
         font-size: 1.4rem;
-        line-height: 2rem;
+        line-height: 2.2rem;
     }
 
     &__copyright,
     &__author {
         color: $color-bg;
         font-size: 1.2rem;
+    }
+
+    & > .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        &--copyright {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2.5rem;
+        }
+    }
+
+    &__article {
+        width: 50%;
+        &:first-child {
+            padding-right: $gap;
+        }
+    }
+
+    &__img {
+        height: auto;
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    &__link {
+        color: $color-primary;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
     }
 }
