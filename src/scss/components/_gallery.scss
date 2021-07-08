@@ -1,8 +1,18 @@
 .gallery {
-    width: 50%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     &__img {
-        width: 20%;
+        width: auto;
+        height: 30rem;
+        margin-right: $gap;
+        margin-bottom: $gap;
+    }
+
+    &__title {
+        font-size: 4rem;
+        padding: 6rem 0;
+        width: 100%;
     }
 }
