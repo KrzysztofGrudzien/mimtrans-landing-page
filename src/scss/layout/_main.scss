@@ -1,6 +1,7 @@
 .section {
     border-bottom: 1px solid darken($color-bg, 10);
     padding-bottom: 3rem;
+    padding-top: 3rem;
     transition: all 0.7s ease-out;
 
     &--home {
@@ -28,6 +29,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    &--contact {
+        display: flex;
+        padding-top: 3rem;
+    }
+}
+
+.gmap_canvas {
+    &__iframe {
+        width: 80rem;
+        height: 60rem;
+    }
 }
 
 .article {
@@ -48,6 +61,8 @@
     }
 
     &__title {
+        font-size: 4rem;
+        line-height: 6rem;
         padding: 6rem 0;
 
         &--small {
@@ -56,8 +71,15 @@
 
         &--image {
             padding: 2rem 0;
-            object-fit: cover;
             text-align: center;
+        }
+
+        &--contact {
+            padding-top: 0;
+        }
+
+        &--big {
+            font-size: 4rem;
         }
     }
 
@@ -85,5 +107,29 @@
         text-decoration: none;
         text-align: center;
         width: 40%;
+    }
+
+    &--wrapper {
+        width: 50%;
+    }
+
+    &--bus-rental {
+        width: 100%;
+    }
+
+    &__img {
+        cursor: pointer;
+        height: auto;
+        width: 30rem;
+    }
+
+    .service-list {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-left: $gap;
+    }
+
+    &__wrapper {
+        display: flex;
     }
 }
