@@ -7,6 +7,9 @@ const timeTableContainer = document.querySelector('.timetable--js');
 const header = document.querySelector('.header--js');
 const sectionHome = document.querySelector('.section--home--js');
 const sections = document.querySelectorAll('.section');
+const testimonials = document.querySelectorAll('.testimonial--js');
+const btnSlideLeft = document.querySelector('.testimonials__arrow-left--js');
+const btnSlideRight = document.querySelector('.testimonials__arrow-right--js');
 
 navigationList.addEventListener('click', e => {
     e.preventDefault();
@@ -62,5 +65,35 @@ const sectionsOptions = {
 const sectionsObserver = new IntersectionObserver(revealSections, sectionsOptions);
 sections.forEach(section => {
     sectionsObserver.observe(section);
-    section.classList.add('hide-section');
+    //section.classList.add('hide-section');
+});
+
+let currentSlide = 0;
+const maxSlides = testimonials.length - 1;
+
+testimonials.forEach((testimonial, index) => {
+    testimonial.style.transform = `translateX(${100 * index}%)`;
+});
+
+btnSlideRight.addEventListener('click', () => {
+    if (currentSlide === maxSlides) {
+        currentSlide = 0;
+    } else {
+        currentSlide++;
+    }
+
+    testimonials.forEach((testimonial, index) => {
+        testimonial.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+    });
+});
+
+btnSlideLeft.addEventListener('click', () => {
+    if (currentSlide === 0) {
+        currentSlide = maxSlides;
+    } else {
+        currentSlide--;
+    }
+    testimonials.forEach((testimonial, index) => {
+        testimonial.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+    });
 });
