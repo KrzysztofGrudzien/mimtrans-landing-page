@@ -3,8 +3,11 @@
 
     &--show-modal {
         background-image: $gradient-secondary;
+        border: none;
         border-radius: 3px;
+        cursor: pointer;
         color: $color-bg;
+        line-height: 2.2rem;
         margin-left: 5rem;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     }
