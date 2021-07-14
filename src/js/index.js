@@ -65,7 +65,7 @@ const sectionsOptions = {
 const sectionsObserver = new IntersectionObserver(revealSections, sectionsOptions);
 sections.forEach(section => {
     sectionsObserver.observe(section);
-    //section.classList.add('hide-section');
+    section.classList.add('hide-section');
 });
 
 let currentSlide = 0;

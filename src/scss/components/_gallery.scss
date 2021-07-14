@@ -4,10 +4,17 @@
     justify-content: center;
 
     &__img {
-        width: auto;
+        cursor: pointer;
         height: 30rem;
         margin-right: $gap;
         margin-bottom: $gap;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        width: auto;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+        }
     }
 
     &__title {
