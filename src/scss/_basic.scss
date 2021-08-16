@@ -39,3 +39,17 @@ code {
 h2 {
     font-size: 6rem;
 }
+
+h3 {
+    font-size: 2.6rem;
+}
+
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

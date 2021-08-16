@@ -1,0 +1,115 @@
+.footer {
+    background-color: $color-text-darker;
+    color: $color-bg;
+    padding-top: 7rem;
+
+    section.footer {
+        padding: 0 2rem;
+    }
+
+    &-article {
+        width: calc(50% - 2rem);
+
+        &:last-child {
+            display: flex;
+        }
+
+        .divider {
+            width: 100%;
+            &:first-child {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    &-title {
+        color: $color-primary-darker;
+        padding-bottom: 2rem;
+    }
+
+    &-divider {
+        padding-bottom: $gap;
+    }
+
+    &-list-item {
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        transform: translateX(0);
+
+        &:hover {
+            transform: translateX(1rem);
+        }
+    }
+
+    &-list-item-link {
+        color: $color-primary-darker;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -5px;
+            width: 3px;
+            height: 1.6rem;
+            background-color: $color-text-darker;
+            transition: background-color 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            background-color: $color-secondary;
+            left: -1rem;
+        }
+
+        &:focus::before {
+            background-color: $color-secondary;
+            left: -1rem;
+        }
+    }
+
+    &-social-media-link {
+        color: $color-bg;
+        font-size: 2.6rem;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &-social-media {
+        align-items: center;
+        display: flex;
+    }
+
+    &-social-media-img {
+        margin-right: 2rem;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+
+        &-link {
+            color: $color-secondary;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+    }
+
+    address {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+    }
+
+    &-address-line {
+        &:nth-child(3) {
+            margin-bottom: 2rem;
+        }
+    }
+}
