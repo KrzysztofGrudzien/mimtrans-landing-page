@@ -31,7 +31,7 @@ const Footer = () => {
                         </div>
                         <div className='footer-divider'>
                             <h3 className='footer-title'>Mapa strony</h3>
-                            <nav className='nav-bar'>
+                            <nav className='footer-nav-bar'>
                                 <ul className='footer-list'>
                                     <li className='footer-list-item'>
                                         <a href='#start' className='footer-list-item-link'>

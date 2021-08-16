@@ -1,10 +1,10 @@
 import Footer from './components/Footer';
+import Header from './components/Header';
+
 const App = () => {
     return (
         <>
-            <div className='App'>
-                <h1>MIMTRANS - a business website type of landing page.</h1>
-            </div>
+            <Header />
             <Footer />
         </>
     );
