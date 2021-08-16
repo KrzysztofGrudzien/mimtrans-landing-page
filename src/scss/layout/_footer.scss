@@ -2,6 +2,8 @@
     background-color: $color-text-darker;
     color: $color-bg;
     padding-top: 7rem;
+    padding-bottom: 2rem;
+    position: relative;
 
     section.footer {
         padding: 0 2rem;
@@ -43,18 +45,18 @@
 
     &-list-item-link {
         color: $color-primary-darker;
-        text-decoration: none;
         position: relative;
+        text-decoration: none;
 
         &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: -5px;
-            width: 3px;
-            height: 1.6rem;
             background-color: $color-text-darker;
+            content: '';
+            height: 1.6rem;
+            left: -5px;
+            position: absolute;
+            top: 0;
             transition: background-color 0.3s ease-in-out, left 0.3s ease-in-out;
+            width: 3px;
         }
 
         &:hover::before {
@@ -111,5 +113,27 @@
         &:nth-child(3) {
             margin-bottom: 2rem;
         }
+    }
+
+    .btn-app {
+        color: $color-white;
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .btn-up {
+        bottom: 2rem;
+        border: none;
+        background-color: $color-bg;
+        cursor: pointer;
+        position: absolute;
+        padding: 1.2rem;
+        right: 2rem;
+        transform: rotate(-90deg);
     }
 }

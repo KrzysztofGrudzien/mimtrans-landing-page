@@ -97,7 +97,14 @@ const Footer = () => {
                                 alt='zdjęcie zrzutu aplikacji mobilnej'
                                 className='footer-img responsive'
                             />
-                            <a href='#' target='_blank' className='btn'></a>
+                            <a
+                                href='https://play.google.com/store/apps/details?id=com.inno.epodroznik.android'
+                                target='_blank'
+                                title='aplikacja mobilna e-podróżnik'
+                                className='btn btn-secondary btn-app'
+                            >
+                                pobierz aplikacje z googleplay
+                            </a>
                         </div>
                     </article>
                 </section>
@@ -113,7 +120,7 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
-            <button>
+            <button className='btn btn-up'>
                 <img src={arrowRightIcon}></img>
             </button>
         </footer>
