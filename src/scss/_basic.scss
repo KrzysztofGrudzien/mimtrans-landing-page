@@ -39,3 +39,35 @@ code {
 h2 {
     font-size: 6rem;
 }
+
+h3 {
+    font-size: 2.6rem;
+}
+
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+
+    &-primary {
+        background-image: $gradient-primary;
+    }
+
+    &-secondary {
+        background-image: $gradient-secondary;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
