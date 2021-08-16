@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    min-height: 100vh;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img,
+svg {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2 {
+    font-size: 6rem;
+}
