@@ -1,0 +1,77 @@
+.contact {
+    flex-wrap: wrap;
+    padding: 0 2rem 8rem 2rem;
+
+    .divider {
+        width: 50%;
+
+        &:nth-of-type(2) {
+            padding-left: 2rem;
+        }
+
+        &:nth-of-type(1) {
+            padding-right: 2rem;
+        }
+    }
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    &-subtitle {
+        color: lighten($color-text-darker, 65);
+        font-weight: 700;
+        font-size: 1.8rem;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+            background-color: $color-primary-darker;
+            content: '';
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: -1.5rem;
+            width: 80%;
+        }
+    }
+}
+
+.form-wrapper {
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.07);
+    padding: 3rem 4rem;
+    width: 100%;
+}
+
+.form {
+    &-input,
+    &-textarea {
+        border: none;
+        border-bottom: solid 1px lighten($color-text-darker, 80);
+        font-size: 1.8rem;
+        line-height: 4;
+        padding: 1.5rem;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-textarea {
+        font-family: inherit;
+        line-height: inherit;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    &-btn {
+        cursor: pointer;
+        color: $color-white;
+        float: right;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+    }
+}
