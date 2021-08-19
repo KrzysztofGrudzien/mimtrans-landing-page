@@ -1,0 +1,43 @@
+.call-action {
+    background-image: $gradient-primary;
+    color: $color-white;
+    height: 330px;
+    margin: 8rem 0;
+    position: relative;
+    padding-top: 6rem;
+
+    &-img {
+        bottom: 0;
+        max-height: 120%;
+        left: 100px;
+        position: absolute;
+    }
+
+    &-img-bus {
+        bottom: -50px;
+        height: 140%;
+        position: absolute;
+        right: -150px;
+    }
+
+    &-question {
+        font-weight: 700;
+        font-size: 3.5rem;
+        padding-left: 100px;
+    }
+
+    &-number {
+        font-weight: 800;
+        font-size: 8rem;
+        padding-left: 100px;
+    }
+
+    &-list {
+        bottom: 0;
+        color: $color-text;
+        font-weight: 600;
+        height: 100%;
+        left: 210px;
+        position: absolute;
+    }
+}
