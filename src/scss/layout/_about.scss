@@ -1,0 +1,60 @@
+.about {
+    flex-wrap: wrap;
+    padding: 0rem 2rem 20rem 0;
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    &-subtitle {
+        color: lighten($color-text-darker, 65);
+        font-weight: 700;
+        font-size: 1.8rem;
+        position: relative;
+        text-transform: uppercase;
+        &::before {
+            background-color: $color-primary-darker;
+            content: '';
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: -1.5rem;
+            width: 80%;
+        }
+    }
+
+    .divider {
+        width: 50%;
+        margin-bottom: 12rem;
+
+        &:nth-child(2n) {
+            padding-right: 4rem;
+        }
+    }
+
+    &-cards {
+        display: flex;
+    }
+
+    &-card {
+        align-items: center;
+        background-color: $color-white;
+        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.07);
+        color: $color-primary-darker;
+        display: flex;
+        flex-direction: column;
+        padding: $gap;
+        width: 23%;
+
+        &-title {
+            line-height: 1.2;
+            padding: 4rem 0;
+        }
+    }
+
+    &-card-hover {
+        background-image: $gradient-primary, url('../../assets/img/autokar-wycieczkowy-2.jpg');
+        color: $color-bg;
+    }
+}
