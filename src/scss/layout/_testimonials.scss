@@ -1,0 +1,80 @@
+.testimonials {
+    padding: 0rem 2rem 20rem 0;
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    &-subtitle {
+        color: lighten($color-text-darker, 65);
+        font-weight: 700;
+        font-size: 1.8rem;
+        position: relative;
+        text-transform: uppercase;
+        &::before {
+            background-color: $color-primary-darker;
+            content: '';
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: -1.5rem;
+            width: 80%;
+        }
+    }
+}
+
+.slider {
+    color: $color-bg;
+    min-height: 44rem;
+    margin-top: 4rem;
+    text-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+
+    &-content {
+        background-image: $gradient-primary;
+        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+        font-size: 2.2rem;
+        padding: 2rem 4rem;
+        position: relative;
+        width: 70%;
+
+        &-title {
+            font-weight: 900;
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+
+        &-footer {
+            align-items: center;
+            bottom: -14rem;
+            color: $color-text;
+            display: flex;
+            font-size: 1.6rem;
+            left: 4rem;
+            position: absolute;
+
+            &-name {
+                font-weight: 600;
+            }
+
+            &-place {
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+
+    &-prev,
+    &-next {
+        align-self: center;
+        cursor: pointer;
+    }
+
+    &-prev {
+        padding-right: 8rem;
+    }
+
+    &-next {
+        padding-left: 8rem;
+    }
+}
