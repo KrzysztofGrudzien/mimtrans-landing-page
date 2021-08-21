@@ -1,0 +1,62 @@
+.partners {
+    padding: 0rem 2rem 20rem 0;
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    &-subtitle {
+        color: lighten($color-text-darker, 65);
+        font-weight: 700;
+        font-size: 1.8rem;
+        position: relative;
+        text-transform: uppercase;
+        &::before {
+            background-color: $color-primary-darker;
+            content: '';
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: -1.5rem;
+            width: 80%;
+        }
+    }
+
+    &-card {
+        width: 32%;
+
+        &-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            max-height: 38rem;
+        }
+
+        &-gradient {
+            background-image: $gradient-primary;
+            position: absolute;
+            height: 100%;
+            left: -70%;
+            opacity: 0.9;
+            transform: rotate(45deg);
+            top: -70%;
+            width: 100%;
+        }
+    }
+
+    &-link {
+        background-image: $gradient-primary;
+        color: $color-bg;
+        display: inline-block;
+        font-size: 2.6rem;
+        padding: 1rem 0;
+        margin-top: 2rem;
+        text-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
