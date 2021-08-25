@@ -1,0 +1,43 @@
+.news {
+    background-image: $gradient-secondary;
+    color: $color-bg;
+    height: 80%;
+    left: 20%;
+    position: absolute;
+    padding: 2rem;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    width: 50%;
+    z-index: 101;
+
+    &-title {
+        font-size: 2.6rem;
+        font-weight: 500;
+        text-shadow: 0 0 20rem rgba(0, 0, 0, 0.2);
+    }
+
+    &-list {
+        margin-top: 4rem;
+        font-size: 1.8rem;
+
+        &-item {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-date {
+        font-weight: 700;
+        font-size: 1.9rem;
+    }
+
+    &-btn {
+        border-radius: 50%;
+        background: none;
+        background-image: url('../../assets/img/close-icon.svg');
+        height: 3rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        width: 3rem;
+    }
+}
