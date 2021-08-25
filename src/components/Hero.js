@@ -1,10 +1,12 @@
 import busGreyImage from '../assets/img/bus-grey@2x.png';
 import arrowLeftWhiteIcon from '../assets/img/arrow-left-white-icon.svg';
 import arrowRightWhiteIcon from '../assets/img/arrow-right-white-icon.svg';
+import News from './News';
 
 const Hero = () => {
     return (
         <div className='hero'>
+            <News />
             <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' />
             <div className='hero-slider'>
                 <div className='hero-slider-image-box'>
