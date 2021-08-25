@@ -1,0 +1,86 @@
+.hero {
+    background-image: $gradient-primary;
+    height: 70rem;
+    margin-bottom: 12rem;
+    position: relative;
+    overflow: hidden;
+
+    &-slide-left {
+        cursor: pointer;
+        left: 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    &-slide-right {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    &-slider {
+        height: 100%;
+        width: 100%;
+
+        &-title {
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 0.7;
+            text-transform: uppercase;
+
+            b {
+                color: $color-primary-darker;
+            }
+        }
+
+        &-subtitle {
+            padding-left: 2rem;
+        }
+
+        &-description {
+            padding-top: 2rem;
+            padding-left: 4.5rem;
+        }
+
+        &-image-box:first-child {
+            background-color: $color-text-darker;
+            bottom: 0;
+            color: $color-bg;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            left: 15rem;
+            position: absolute;
+            padding: 10rem;
+            transform: skewX(-20deg);
+            width: 70rem;
+        }
+
+        &-image-box:last-child {
+            //background-color: $color-text-darker;
+            bottom: 0;
+            transform: skewX(-20deg);
+            height: 100%;
+            right: -57rem;
+            position: absolute;
+            width: 70rem;
+        }
+
+        &-image {
+            bottom: 0;
+            position: absolute;
+            right: -2rem;
+            z-index: 10;
+        }
+    }
+}
+
+.reset-skew {
+    transform: skewX(20deg);
+}
