@@ -13,7 +13,7 @@ const Partners = () => {
                 <span className='partners-subtitle'>Kto z nami współpracuje?</span>
                 <h2 className='partners-title'>Nasi partnerzy</h2>
             </div>
-            <div className='parners-cards flex'>
+            <div className='partners-cards flex'>
                 <div className='partners-card'>
                     <div className='partners-card-image-wrapper'>
                         <div className='partners-card-gradient'></div>

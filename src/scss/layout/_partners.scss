@@ -1,5 +1,9 @@
 .partners {
-    padding: 0rem 2rem 20rem 0;
+    padding: 0rem 2rem 20rem 2rem;
+
+    @media (max-width: 1024px) {
+        padding: 0rem 2rem 5rem 2rem;
+    }
 
     &-title {
         padding-top: 2rem;
@@ -23,8 +27,27 @@
         }
     }
 
+    &-img {
+        width: 100%;
+    }
+
+    &-cards {
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+    }
+
     &-card {
         width: 32%;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 6rem;
+            width: 49%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
         &-image-wrapper {
             position: relative;
@@ -54,6 +77,10 @@
         text-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
         text-align: center;
         width: 100%;
+
+        @media (max-width: 1024px) {
+            font-size: 2rem;
+        }
 
         &:hover {
             text-decoration: none;
