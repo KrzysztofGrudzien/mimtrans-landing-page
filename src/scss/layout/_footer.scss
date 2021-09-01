@@ -149,6 +149,12 @@
                 text-decoration: none;
             }
         }
+
+        &:last-child {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
     }
 
     address {
