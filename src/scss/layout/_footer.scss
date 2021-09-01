@@ -1,9 +1,13 @@
 .footer {
     background-color: $color-text-darker;
     color: $color-bg;
-    padding-top: 7rem;
-    padding-bottom: 2rem;
+    padding: 7rem 4rem 2rem 4rem;
     position: relative;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 4rem 0rem 2rem 0rem;
+    }
 
     section.footer {
         padding: 0 2rem;
@@ -12,14 +16,57 @@
     &-article {
         width: calc(50% - 2rem);
 
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        &:first-child {
+            @media (max-width: 1220px) {
+                flex-direction: column;
+                padding-right: 4rem;
+            }
+        }
+
         &:last-child {
             display: flex;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            @media (max-width: 1220px) {
+                flex-direction: column;
+            }
         }
 
         .divider {
+            padding-bottom: 2rem;
             width: 100%;
+
+            img {
+                width: 100%;
+            }
+
             &:first-child {
                 padding-right: 2rem;
+
+                @media (max-width: 1420px) {
+                    order: 0;
+                }
+
+                @media (max-width: 1220px) {
+                    order: 1;
+                }
+            }
+
+            &:last-child {
+                @media (max-width: 1420px) {
+                    order: 1;
+                }
+
+                @media (max-width: 1220px) {
+                    order: 0;
+                }
             }
         }
     }
@@ -52,11 +99,11 @@
             background-color: $color-text-darker;
             content: '';
             height: 1.6rem;
-            left: -5px;
+            left: -0.5rem;
             position: absolute;
             top: 0;
             transition: background-color 0.3s ease-in-out, left 0.3s ease-in-out;
-            width: 3px;
+            width: 0.3rem;
         }
 
         &:hover::before {
@@ -91,6 +138,7 @@
 
     .copyright {
         font-size: 1.2rem;
+        padding: 0 2rem;
 
         &-link {
             color: $color-secondary;
@@ -126,13 +174,13 @@
     }
 
     .btn-up {
-        bottom: 2rem;
+        bottom: 6rem;
         border: none;
         background-color: $color-bg;
         cursor: pointer;
         position: absolute;
         padding: 1.2rem;
-        right: 2rem;
+        right: 6rem;
         transform: rotate(-90deg);
     }
 }

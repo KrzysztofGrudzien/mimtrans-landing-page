@@ -36,27 +36,27 @@ const Header = () => {
                                 </a>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <a href='#about' className='nav-bar-list-item-link'>
                                     O nas
                                 </a>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <a href='#services' className='nav-bar-list-item-link'>
                                     Usługi
                                 </a>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <a href='#partners' className='nav-bar-list-item-link'>
                                     Partnerzy
                                 </a>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <a href='#testimonials' className='nav-bar-list-item-link'>
                                     Rekomendacje
                                 </a>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <a href='#contact' className='nav-bar-list-item-link'>
                                     Kontakt
                                 </a>
                             </li>
