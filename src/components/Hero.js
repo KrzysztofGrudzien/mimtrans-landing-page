@@ -7,7 +7,7 @@ import Timetable from './Timetable';
 const Hero = () => {
     return (
         <div className='hero'>
-            <News />
+            {/* <News /> */}
             {/* <Timetable /> */}
             <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' />
             <div className='hero-slider'>
