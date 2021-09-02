@@ -134,7 +134,6 @@ const Services = () => {
                             <img src={turnIcon} alt='ikonka odwróć karte' className='services-card-footer-img' />
                         </footer>
                     </article>
-
                     <article className='services-card'>
                         <h3 className='services-card-title'>Samochody ciężarowe</h3>
                         <p className='services-card-description'>

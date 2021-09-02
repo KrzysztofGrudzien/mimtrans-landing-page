@@ -7,6 +7,14 @@
 html {
     box-sizing: inherit;
     font-size: 62.5%;
+
+    @media (max-width: 1440px) {
+        font-size: 60.5%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 57.5%;
+    }
 }
 
 body {
@@ -41,6 +49,14 @@ h2 {
     font-size: 6rem;
     font-weight: 400;
     line-height: 1.2;
+
+    @media (max-width: 1440px) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 4rem;
+    }
 }
 
 h3 {

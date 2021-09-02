@@ -6,15 +6,28 @@
     left: 20%;
     position: absolute;
     padding: 2rem;
+    overflow-y: scroll;
     top: 50%;
     transform: translate(-20%, -50%);
     width: 50%;
     z-index: 101;
 
+    @media (max-width: 1024px) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
     &-title {
         font-size: 2.6rem;
         font-weight: 500;
+        padding-right: 4rem;
         text-shadow: 0 0 20rem rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &-list {
@@ -35,6 +48,7 @@
         border-radius: 50%;
         background: none;
         background-image: url('../../assets/img/close-icon.svg');
+        cursor: pointer;
         height: 3rem;
         position: absolute;
         right: 2rem;

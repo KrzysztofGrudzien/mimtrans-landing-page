@@ -3,19 +3,25 @@
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
     height: 90%;
     left: 50%;
-    position: absolute;
+    position: fixed;
     padding: 2rem 4rem;
+    overflow-y: scroll;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%;
     z-index: 101;
 
-    &-buses {
-        width: 48%;
+    @media (max-width: 1280px) {
+        flex-direction: column;
     }
 
+    &-buses,
     &-tickets {
         width: 48%;
+
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
     }
 
     &-title {
@@ -43,6 +49,13 @@
 
     &-img {
         cursor: pointer;
+    }
+
+    &-gradient,
+    &-info {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &-info {
