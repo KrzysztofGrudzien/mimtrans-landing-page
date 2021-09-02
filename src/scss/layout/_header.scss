@@ -10,12 +10,19 @@
 
     &-list {
         display: flex;
+        padding-left: 2rem;
 
         &-item {
             align-items: center;
             display: flex;
             font-weight: 600;
             padding-right: 8rem;
+
+            &:nth-child(2) {
+                @media (max-width: 400px) {
+                    display: none;
+                }
+            }
 
             &:last-child {
                 padding-right: 2rem;
@@ -31,8 +38,17 @@
         }
     }
 
+    &-logo {
+        align-items: center;
+        display: flex;
+    }
+
     &-logo-img {
         margin-left: 2rem;
+
+        @media (max-width: 480px) {
+            width: 70%;
+        }
     }
 
     &-main-content-wrapper {
@@ -47,6 +63,10 @@
         align-items: center;
         display: flex;
         padding-right: 2rem;
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
 
         &-list {
             display: flex;
@@ -77,6 +97,86 @@
             &-img {
                 margin-right: 2rem;
             }
+        }
+    }
+
+    .nav-bar-mobile {
+        background-color: $color-bg;
+        box-shadow: -1px 1px 3rem rgba(0, 0, 0, 0.1);
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        z-index: 1000;
+
+        @media (min-width: 1281px) {
+            display: none;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+
+            &-item {
+                font-size: 2rem;
+                padding: 1rem 0;
+                padding-left: 2rem;
+                text-align: left;
+
+                &-link {
+                    color: $color-text;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-img {
+            cursor: pointer;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+        &-time-table-toggle {
+            align-items: center;
+            border: none;
+            color: $color-white;
+            cursor: pointer;
+            display: flex;
+            font-size: 1.8rem;
+            justify-content: space-between;
+            margin-top: -7rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 1.5rem 2rem;
+            position: absolute;
+            text-align: center;
+            text-decoration: none;
+            width: calc(100% - 4rem);
+
+            &-img {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .nav-box {
+        align-self: center;
+        cursor: pointer;
+        height: 4rem;
+        margin-right: 2rem;
+        width: 4rem;
+
+        &-img {
+            width: 100%;
+        }
+
+        @media (min-width: 1280px) {
+            display: none;
         }
     }
 }
