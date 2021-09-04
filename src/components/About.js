@@ -2,8 +2,14 @@ import busesImageSmall from '../assets/img/buses.jpg';
 import busesImageBig from '../assets/img/buses@2x.jpg';
 import buseGreenImageSmall from '../assets/img/bus-zielony-2.jpg';
 import buseGreenImageBig from '../assets/img/bus-zielony-2@2x.jpg';
-import testIcon from '../assets/img/test-icon.svg';
-import testIconWhite from '../assets/img/test-icon-white.svg';
+import touristIcon from '../assets/img/tourist-icon.svg';
+import touristIconWhite from '../assets/img/tourist-white-icon.svg';
+import healthIcon from '../assets/img/health-icon.svg';
+import healthIconWhite from '../assets/img/health-white-icon.svg';
+import transportIcon from '../assets/img/transport-icon.svg';
+import transportIconWhite from '../assets/img/transport-white-icon.svg';
+import experienceIcon from '../assets/img/experience-icon.svg';
+import experienceIconWhite from '../assets/img/experience-white-icon.svg';
 
 const About = () => {
     return (
@@ -83,39 +89,39 @@ const About = () => {
             </div>
             <div className='about-cards flex'>
                 <article className='about-card about-card-hover'>
-                    <img src={testIconWhite} alt='icon' className='about-card-icon' />
+                    <img src={healthIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
                     <p className='about-card-description'>
-                        Przejechaliśmy tysiące kilometrów i wiemy, że nasi Klienci najwyżej cenią nas za komfort,
-                        poczucie bezpieczeństwa i punktualność.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
+                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
+                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={testIcon} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
+                    <img src={transportIcon} alt='icon' className='about-card-icon' />
+                    <h3 className='about-card-title'>Kompleksowe usługi logistyczne</h3>
                     <p className='about-card-description'>
-                        Klientom gwarantujemy najwyższą jakość za przystępną cenę, a w niej: wygodny przejazd,
-                        całodobowy kontakt z dyspozytorem, najnowocześniejsza aplikacja, płatność online, inteligentna
-                        sieć połączeń, optymalizacja kosztów i czasu przejazdów oraz elastyczność i dopasowanie do
-                        potrzeb Klienta.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
+                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
+                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={testIcon} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
+                    <img src={experienceIcon} alt='icon' className='about-card-icon' />
+                    <h3 className='about-card-title'>Wysoka jakość i konkurencyjne ceny</h3>
                     <p className='about-card-description'>
-                        Przejechaliśmy tysiące kilometrów i wiemy, że nasi Klienci najwyżej cenią nas za komfort,
-                        poczucie bezpieczeństwa i punktualność.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
+                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
+                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={testIcon} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
+                    <img src={touristIcon} alt='icon' className='about-card-icon' />
+                    <h3 className='about-card-title'>Dla kogo nasze usługi?</h3>
                     <p className='about-card-description'>
-                        Klientom gwarantujemy najwyższą jakość za przystępną cenę, a w niej: wygodny przejazd,
-                        całodobowy kontakt z dyspozytorem, najnowocześniejsza aplikacja, płatność online, inteligentna
-                        sieć połączeń, optymalizacja kosztów i czasu przejazdów oraz elastyczność i dopasowanie do
-                        potrzeb Klienta.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
+                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
+                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
                     </p>
                 </article>
             </div>
