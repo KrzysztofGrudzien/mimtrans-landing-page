@@ -18,12 +18,20 @@ const Contact = () => {
                 </p>
             </div>
             <div className='divider'>
-                <img
-                    src={mapaImageSmall}
-                    srcSet={`${mapaImageSmall} 300w, ${mapaImageBig} 768w, ${mapaImageBig} 1280w`}
-                    alt='zdjęcie mapy dojazdu do firmy'
-                    className='contact-img'
-                />
+                <div class='mapouter'>
+                    <div class='gmap_canvas'>
+                        <iframe
+                            width='100%'
+                            height='400'
+                            id='gmap_canvas'
+                            src='https://maps.google.com/maps?q=Nowa%20Buk%C3%B3wka,%20ul.%20Rumiankowa%2041%2096-321%20%C5%BBabia%20Wola&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                            frameborder='0'
+                            scrolling='no'
+                            marginheight='0'
+                            marginwidth='0'
+                        ></iframe>
+                    </div>
+                </div>
             </div>
             <div className='form-wrapper'>
                 <form action='' className='form flex'>
