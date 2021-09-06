@@ -1,9 +1,13 @@
 import pdfIcon from '../assets/img/pdf@2x.png';
+import { useContext } from 'react';
+import { AppContext } from '../context/appContext';
 
 const Timetable = () => {
+    const { isOpenTimetable, toggleTimetableState } = useContext(AppContext);
+
     return (
-        <div className='timetable flex'>
-            <button className='btn timetable-btn'></button>
+        <div className={isOpenTimetable ? 'timetable flex' : 'timetable flex hide'}>
+            <button className='btn timetable-btn' onClick={toggleTimetableState}></button>
             <div className='timetable-buses'>
                 <h3 className='timetable-title'>Rozkład jazdy linii autobusowych</h3>
                 <div className='timetable-cards'>

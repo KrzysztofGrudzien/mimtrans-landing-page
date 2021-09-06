@@ -2,13 +2,15 @@ import busGreyImage from '../assets/img/bus-grey@2x.png';
 import arrowLeftWhiteIcon from '../assets/img/arrow-left-white-icon.svg';
 import arrowRightWhiteIcon from '../assets/img/arrow-right-white-icon.svg';
 import News from './News';
-import Timetable from './Timetable';
+import { useContext } from 'react';
+import { AppContext } from '../context/appContext';
 
 const Hero = () => {
+    const { isOpenNews } = useContext(AppContext);
+
     return (
         <div className='hero'>
-            {/* <News /> */}
-            {/* <Timetable /> */}
+            {isOpenNews ? <News /> : null}
             <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' />
             <div className='hero-slider'>
                 <div className='hero-slider-image-box'>
