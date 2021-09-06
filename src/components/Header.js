@@ -100,7 +100,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#services' className='nav-mobile-bar-list-item-link'>
+                                <a href='#services' className='nav-bar-mobile-list-item-link'>
                                     Usługi
                                 </a>
                             </li>
@@ -120,8 +120,11 @@ const Header = () => {
                                 </a>
                             </li>
                         </ul>
-                        <button className='btn btn-secondary nav-bar-mobile-time-table-toggle'>
-                            <img src={calendarIcon} alt='ikona kalendarza' className='nav-bar-time-table-toggle-img' />{' '}
+                        <button
+                            className='btn btn-secondary nav-bar-mobile-time-table-toggle'
+                            onClick={toggleTimetableState}
+                        >
+                            <img src={calendarIcon} alt='ikona kalendarza' className='nav-bar-time-table-toggle-img' />
                             Rozkład jazdy i taryfa biletowa
                         </button>
                     </nav>
