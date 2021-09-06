@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { AppContext } from '../context/appContext';
+
 const News = () => {
+    const { toggleNewsState } = useContext(AppContext);
+
     return (
         <article className='news'>
-            <button className='btn news-btn'></button>
+            <button className='btn news-btn' onClick={toggleNewsState}></button>
             <h2 className='news-title'>Aktualności dotyczące kursowania połączeń autobusowych</h2>
             <ul className='news-list'>
                 <li className='news-list-item'>
