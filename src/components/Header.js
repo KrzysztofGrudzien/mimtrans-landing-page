@@ -10,13 +10,11 @@ import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
 
 const Header = () => {
-    const { isOpenTimetable, isOpenMenu, toggleTimetableState, toggleNewsState, toggleMenuState } =
-        useContext(AppContext);
+    const { isOpenMenu, toggleTimetableState, toggleNewsState, toggleMenuState } = useContext(AppContext);
 
     return (
         <header className='header' id='start'>
-            {isOpenTimetable ? <Timetable /> : null}
-
+            <Timetable />
             <div className='header-info container'>
                 <ul className='header-list'>
                     <li className='header-list-item' onClick={toggleNewsState}>
@@ -81,7 +79,7 @@ const Header = () => {
                             Rozkład jazdy i taryfa biletowa
                         </button>
                     </nav>
-                    <nav className={isOpenMenu ? 'nav-bar-mobile' : 'nav-bar-mobile hide'}>
+                    <nav className={isOpenMenu ? 'nav-bar-mobile' : 'nav-bar-mobile hide-mobile'}>
                         <img
                             src={closeIcon}
                             alt='ikonka zamknięcia navigacji'

@@ -112,6 +112,8 @@
         min-height: 100vh;
         position: fixed;
         top: 0;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
         right: 0;
         width: 40%;
         z-index: 1000;
@@ -197,4 +199,8 @@
             display: none;
         }
     }
+}
+
+.hide-mobile {
+    transform: translateX(0%) !important;
 }
