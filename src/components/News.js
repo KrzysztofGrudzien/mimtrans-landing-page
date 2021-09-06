@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
 
 const News = () => {
-    const { toggleNewsState } = useContext(AppContext);
+    const { isOpenNews, toggleNewsState } = useContext(AppContext);
 
     return (
-        <article className='news'>
+        <article className={isOpenNews ? 'news' : 'news hide'}>
             <button className='btn news-btn' onClick={toggleNewsState}></button>
             <h2 className='news-title'>Aktualności dotyczące kursowania połączeń autobusowych</h2>
             <ul className='news-list'>

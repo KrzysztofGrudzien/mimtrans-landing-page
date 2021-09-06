@@ -8,6 +8,7 @@
     overflow-y: scroll;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
     width: 90%;
     z-index: 101;
 
@@ -91,4 +92,8 @@
         top: 2rem;
         width: 3rem;
     }
+}
+
+.hide {
+    transform: translate(-200%, 0%);
 }
