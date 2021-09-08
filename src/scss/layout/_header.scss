@@ -118,16 +118,16 @@
         width: 40%;
         z-index: 1000;
 
-        @media (min-width: 1281px) {
-            display: none;
+        @media (max-width: 600px) {
+            width: 100%;
         }
 
         @media (max-width: 1024px) {
             width: 60%;
         }
 
-        @media (max-width: 600px) {
-            width: 100%;
+        @media (min-width: 1281px) {
+            display: none;
         }
 
         &-list {
