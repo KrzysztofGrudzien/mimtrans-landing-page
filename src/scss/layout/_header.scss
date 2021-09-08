@@ -113,7 +113,7 @@
         position: fixed;
         top: 0;
         transition: transform 0.3s ease-in-out;
-        transform: translateX(-100%);
+        transform: translateX(0%);
         right: 0;
         width: 40%;
         z-index: 1000;
@@ -123,7 +123,7 @@
         }
 
         @media (max-width: 1024px) {
-            width: 60%;
+            width: 70%;
         }
 
         @media (max-width: 600px) {
@@ -202,5 +202,5 @@
 }
 
 .hide-mobile {
-    transform: translateX(0%) !important;
+    transform: translateX(100%) !important;
 }
