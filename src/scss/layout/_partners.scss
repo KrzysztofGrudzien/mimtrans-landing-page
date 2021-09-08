@@ -29,6 +29,7 @@
 
     &-img {
         width: 100%;
+        transition: transform 0.3s ease-in-out;
     }
 
     &-cards {
@@ -38,6 +39,8 @@
     }
 
     &-card {
+        display: flex;
+        flex-direction: column;
         width: 32%;
 
         @media (max-width: 1024px) {
@@ -60,8 +63,9 @@
             position: absolute;
             height: 100%;
             left: -70%;
-            opacity: 0.9;
+            opacity: 0.8;
             transform: rotate(45deg);
+            transition: transform 0.4s ease-in-out;
             top: -70%;
             width: 100%;
         }
@@ -74,6 +78,7 @@
         font-size: 2.6rem;
         padding: 1rem 0;
         margin-top: 2rem;
+        order: 1;
         text-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
         text-align: center;
         width: 100%;
@@ -84,6 +89,10 @@
 
         &:hover {
             text-decoration: none;
+        }
+
+        &:hover ~ .partners-card-image-wrapper > .partners-card-gradient {
+            transform: scale(4);
         }
     }
 }

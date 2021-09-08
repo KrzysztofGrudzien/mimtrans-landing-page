@@ -15,46 +15,46 @@ const Partners = () => {
             </div>
             <div className='partners-cards flex'>
                 <div className='partners-card'>
+                    <a href='http://palacradziejowice.pl/' target='_blank' className='partners-link'>
+                        Dom Pracy Twórczej w Radziejowicach
+                    </a>
                     <div className='partners-card-image-wrapper'>
-                        <div className='partners-card-gradient'></div>
                         <img
                             src={houseImageSmall}
                             srcSet={`${houseImageSmall} 300w, ${houseImageBig} 768w, ${houseImageBig} 1280w`}
                             alt='zdjęcie domu pracy twórczej w Radziejowicach'
                             className='partners-img'
                         />
+                        <div className='partners-card-gradient'></div>
                     </div>
-                    <a href='http://palacradziejowice.pl/' target='_blank' className='partners-link'>
-                        Dom Pracy Twórczej w Radziejowicach
-                    </a>
                 </div>
                 <div className='partners-card'>
+                    <a href='http://www.artis-loft.pl/' target='_blank' className='partners-link'>
+                        Hotel Artis-Loft w Radziejowicach
+                    </a>
                     <div className='partners-card-image-wrapper'>
-                        <div className='partners-card-gradient'></div>
                         <img
                             src={hotelArtisImageSmall}
                             srcSet={`${hotelArtisImageSmall} 300w, ${hotelArtisImageBig} 768w, ${hotelArtisImageBig} 1280w`}
                             alt='zdjęcie hotelu Artis w Radziejowicach'
                             className='partners-img'
                         />
+                        <div className='partners-card-gradient'></div>
                     </div>
-                    <a href='http://www.artis-loft.pl/' target='_blank' className='partners-link'>
-                        Hotel Artis-Loft w Radziejowicach
-                    </a>
                 </div>
                 <div className='partners-card'>
+                    <a href='http://www.hotelpanorama.pl/' target='_blank' className='partners-link'>
+                        Hotel Panorama w Mszczonowie
+                    </a>
                     <div className='partners-card-image-wrapper'>
-                        <div className='partners-card-gradient'></div>
                         <img
                             src={hotelPanoramaImageSmall}
                             srcSet={`${hotelPanoramaImageSmall} 300w, ${hotelPanoramaImageBig} 768w, ${hotelPanoramaImageBig} 1280w`}
                             alt='zdjęcie hotelu Panorama w Mszczonowie'
                             className='partners-img'
                         />
+                        <div className='partners-card-gradient'></div>
                     </div>
-                    <a href='http://www.hotelpanorama.pl/' target='_blank' className='partners-link'>
-                        Hotel Panorama w Mszczonowie
-                    </a>
                 </div>
             </div>
         </section>
