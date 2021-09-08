@@ -1,6 +1,7 @@
 .contact {
     flex-wrap: wrap;
     padding: 0 2rem 20rem 2rem;
+    position: relative;
 
     @media (max-width: 920px) {
         flex-direction: column;

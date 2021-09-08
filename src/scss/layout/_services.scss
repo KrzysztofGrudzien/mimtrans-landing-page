@@ -1,6 +1,7 @@
 .services {
     flex-wrap: wrap;
     padding: 0rem 2rem 20rem 2rem;
+    position: relative;
 
     @media (max-width: 1024px) {
         padding: 0rem 2rem 10rem 2rem;
