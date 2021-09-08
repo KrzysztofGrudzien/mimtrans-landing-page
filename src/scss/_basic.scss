@@ -116,15 +116,14 @@ h3 {
 }
 
 .text-id {
-    display: none; // Fix problem with positions
-    color: $color-text;
+    background-image: $gradient-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $color-primary-darker;
     font-size: 8rem;
-    font-weight: 700;
-    left: -10rem;
+    font-weight: 900;
+    left: 2rem;
     position: absolute;
-    opacity: 0.04;
-    top: 50%;
-    transform: rotate(-90deg) translateY(0%) translateX(10rem);
+    top: -13rem;
     text-transform: uppercase;
-    text-align: right;
 }
