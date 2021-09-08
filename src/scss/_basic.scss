@@ -126,4 +126,9 @@ h3 {
     position: absolute;
     top: -13rem;
     text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+        font-size: 6rem;
+        top: -10rem;
+    }
 }
