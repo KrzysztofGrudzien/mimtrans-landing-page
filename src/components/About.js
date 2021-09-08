@@ -88,7 +88,7 @@ const About = () => {
                 />
             </div>
             <div className='about-cards flex'>
-                <article className='about-card about-card-hover'>
+                <article className='about-card'>
                     <img src={healthIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
                     <p className='about-card-description'>
@@ -98,7 +98,7 @@ const About = () => {
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={transportIcon} alt='icon' className='about-card-icon' />
+                    <img src={transportIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Kompleksowe usługi logistyczne</h3>
                     <p className='about-card-description'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
@@ -107,7 +107,7 @@ const About = () => {
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={experienceIcon} alt='icon' className='about-card-icon' />
+                    <img src={experienceIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Wysoka jakość i konkurencyjne ceny</h3>
                     <p className='about-card-description'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
@@ -116,7 +116,7 @@ const About = () => {
                     </p>
                 </article>
                 <article className='about-card'>
-                    <img src={touristIcon} alt='icon' className='about-card-icon' />
+                    <img src={touristIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Dla kogo nasze usługi?</h3>
                     <p className='about-card-description'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
