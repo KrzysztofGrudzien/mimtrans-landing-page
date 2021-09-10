@@ -18,7 +18,12 @@ const Timetable = () => {
                             Warszawa P+R Al. Krakowska
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1PUDBSpbnv6LbJ30ezW0DGcrGGIwEflVT/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                     <div className='timetable-card flex'>
@@ -28,7 +33,12 @@ const Timetable = () => {
                             Siestrzeń z przesiadką do/z Warszawy{' '}
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1z3aWLq3rwGvszMeWOw2ngVoFss6P0ziZ/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                     <div className='timetable-card flex'>
@@ -37,7 +47,12 @@ const Timetable = () => {
                             Adamów Parcel - Parcela - Krze - Radziejowice - Korytów - Żyrardów Dw. PKP{' '}
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1exRA4d5wDwNGQsqY5syUqbrVZxIPTKvi/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +67,12 @@ const Timetable = () => {
                             Warszawa P+R Al. Krakowska
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1TOqdoDDc_4aUysinO8Ra1N0y-L74Mrhk/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                     <div className='timetable-card flex'>
@@ -62,7 +82,12 @@ const Timetable = () => {
                             Siestrzeń z przesiadką do/z Warszawy
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1c-8CQ_HW0usce5OdCZJ7sWlb8DWmwWgt/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                     <div className='timetable-card flex'>
@@ -71,7 +96,12 @@ const Timetable = () => {
                             Informacja o sprzedaży biletów miesięcznych na komunikację autobusową na miesiąc czerwiec
                         </p>
                         <div className='timetable-img'>
-                            <img src={pdfIcon} alt='ikona pdf' />
+                            <a
+                                href='https://drive.google.com/file/d/1SXqIbtpnuS4HTnlxCaUBsHEO2E_aseJW/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <img src={pdfIcon} alt='ikona pobierz pdf' />
+                            </a>
                         </div>
                     </div>
                 </div>
