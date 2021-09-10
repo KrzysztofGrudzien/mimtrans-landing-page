@@ -110,21 +110,6 @@ const Services = () => {
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
                                 </div>
                                 <footer className='services-card-footer'>
                                     <p className='services-card-footer-description'>
@@ -202,21 +187,6 @@ const Services = () => {
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
                                 </div>
                                 <footer className='services-card-footer'>
                                     <p className='services-card-footer-description'>
@@ -279,21 +249,6 @@ const Services = () => {
                                     </ul>
                                 </p>
                                 <div className='services-gallery'>
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
                                     <img
                                         src={busGreenImage}
                                         alt='miniaturka zielonego busa mimtrans'
