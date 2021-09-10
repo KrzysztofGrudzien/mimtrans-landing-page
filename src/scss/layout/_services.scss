@@ -79,7 +79,7 @@
     }
 
     &-list-item {
-        background: url('../../assets/img/check-icon.svg') center left no-repeat;
+        background: url('../../assets/img/check-icon-white.svg') center left no-repeat;
         font-size: 2rem;
         font-weight: 600;
         padding: 0.5rem 3rem;
@@ -93,22 +93,82 @@
         @media (max-width: 1220px) {
             flex-wrap: wrap;
         }
-
-        @media (max-width: 920px) {
-            flex-direction: column;
-        }
     }
 
     &-card {
-        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
-        background-image: $gradient-primary;
         color: $color-bg;
-        display: flex;
-        flex-direction: column;
-        min-height: 60rem;
-        padding: 4rem;
-        position: relative;
+        min-height: 85rem;
+        perspective: 150rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
         width: 32%;
+
+        &-wrapper {
+            box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            height: 100%;
+            position: relative;
+            transition: transform 0.4s linear;
+            transform-style: preserve-3d;
+            width: 100%;
+        }
+
+        &-wrapper.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        &-face {
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            padding: 3rem;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+
+            &-front {
+                background-image: $gradient-primary;
+                justify-content: space-between;
+                transform: rotateY(0);
+            }
+
+            &-back {
+                background-image: $gradient-secondary;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &-title {
+            font-size: 3.5rem;
+            padding-bottom: 4rem;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            padding-bottom: 6rem;
+        }
+
+        &-footer {
+            background-color: $color-bg;
+            color: $color-text;
+            font-size: 1.8rem;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 4rem;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            &-description {
+                align-items: center;
+                display: flex;
+                img {
+                    margin-left: 1rem;
+                }
+            }
+        }
 
         @media (max-width: 1220px) {
             width: 49%;
@@ -125,84 +185,9 @@
             }
         }
 
-        &-title {
-            font-size: 3.5rem;
-            padding-bottom: 4rem;
-            text-transform: uppercase;
-        }
-
-        &-description {
-            padding-bottom: 6rem;
-        }
-
-        &-footer {
-            background-color: $color-bg;
-            color: $color-text;
-            font-size: 1.8rem;
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            padding: 2rem 4rem;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-
-            &-description {
-                align-items: center;
-                display: flex;
-
-                img {
-                    margin-left: 1rem;
-                }
-            }
-        }
-    }
-
-    &-card-reverse {
-        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
-        color: $color-primary-darker;
-        display: flex;
-        flex-direction: column;
-        min-height: 60rem;
-        padding: 4rem;
-        position: relative;
-        width: 32%;
-
-        @media (max-width: 1220px) {
-            width: 49%;
-        }
-
-        @media (max-width: 920px) {
-            margin-bottom: 2rem;
-            width: 100%;
-        }
-
-        &-title {
-            font-size: 3.5rem;
-            padding-bottom: 4rem;
-            text-transform: uppercase;
-        }
-
-        &-description {
-            padding-bottom: 6rem;
-        }
-
-        &-footer {
-            align-items: center;
-            bottom: 0;
-            background-color: $color-bg;
-            color: $color-text;
-            display: flex;
-            font-size: 1.8rem;
-            justify-content: space-between;
-            left: 0;
-            position: absolute;
-            padding: 2rem 4rem;
-            width: 100%;
-
-            &-description {
-                align-items: center;
-                display: flex;
+        &:first-of-type {
+            @media (max-width: 920px) {
+                margin-bottom: 2rem;
             }
         }
     }
@@ -211,6 +196,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         &-img {
             margin-bottom: 2rem;
