@@ -2,8 +2,27 @@ import infoPersonImageSmall from '../assets/img/info-person.png';
 import infoPersonImageBig from '../assets/img/info-person@2x.png';
 import greenBusImageSmall from '../assets/img/bus-green.png';
 import greenBusImageBig from '../assets/img/bus-green@2x.png';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
-const callToAction = () => {
+const CallToAction = () => {
+    useEffect(() => {
+        gsap.from('.call-action', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.call-action',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
+
     return (
         <section className='call-action'>
             <div className='container flex-column'>
@@ -33,4 +52,4 @@ const callToAction = () => {
     );
 };
 
-export default callToAction;
+export default CallToAction;

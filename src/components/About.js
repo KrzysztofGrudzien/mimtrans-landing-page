@@ -10,8 +10,27 @@ import transportIcon from '../assets/img/transport-icon.svg';
 import transportIconWhite from '../assets/img/transport-white-icon.svg';
 import experienceIcon from '../assets/img/experience-icon.svg';
 import experienceIconWhite from '../assets/img/experience-white-icon.svg';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+    useEffect(() => {
+        gsap.from('.about', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.about',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
+
     return (
         <section className='about container flex' id='about'>
             <span className='text-id'>o nas</span>

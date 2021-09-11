@@ -7,7 +7,10 @@ import coffeeIcon from '../assets/img/coffee-icon.svg';
 import wifiIcon from '../assets/img/wifi-icon.svg';
 import toiletIcon from '../assets/img/toilet-icon.svg';
 import busGreenImage from '../assets/img/bus-zielony.jpg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
     const [isFlippedCardOne, setIsFlippedCardOne] = useState(true);
@@ -23,6 +26,21 @@ const Services = () => {
     const handleIsCardFlippedCardThree = () => {
         setIsFlippedCardThree(!isFlippedCardThree);
     };
+
+    useEffect(() => {
+        gsap.from('.services', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.services',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
 
     return (
         <section className='services container flex' id='services'>

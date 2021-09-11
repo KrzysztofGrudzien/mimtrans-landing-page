@@ -1,7 +1,26 @@
 import mapaImageSmall from '../assets/img/mapa.jpg';
 import mapaImageBig from '../assets/img/mapa@2x.jpg';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+    useEffect(() => {
+        gsap.from('.contact', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.contact',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
+
     return (
         <section className='contact container flex' id='contact'>
             <span className='text-id'>kontakt</span>
