@@ -2,6 +2,10 @@ import arrowLeftIcon from '../assets/img/arrow-left-icon.svg';
 import arrowRightIcon from '../assets/img/arrow-right-icon.svg';
 import { useState } from 'react';
 import { slides } from '../data/slides';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Testimonials = () => {
     const [nextSlide, setNextSlide] = useState(100);
@@ -21,6 +25,21 @@ const Testimonials = () => {
             setNextSlide(nextSlide - 100);
         }
     };
+
+    useEffect(() => {
+        gsap.from('.testimonials', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.testimonials',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
 
     return (
         <section className='testimonials container' id='testimonials'>

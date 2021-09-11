@@ -1,7 +1,7 @@
 .hero {
     background-image: $gradient-primary;
     height: 70rem;
-    margin-bottom: 12rem;
+    margin-bottom: 20rem;
     position: relative;
     overflow: hidden;
 
@@ -63,7 +63,6 @@
         }
 
         &-image-box:last-child {
-            //background-color: $color-text-darker;
             bottom: 0;
             transform: skewX(-20deg);
             height: 100%;

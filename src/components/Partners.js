@@ -4,8 +4,27 @@ import hotelPanoramaImageSmall from '../assets/img/hotel-panorama.jpg';
 import hotelPanoramaImageBig from '../assets/img/hotel-panorama@2x.jpg';
 import hotelArtisImageSmall from '../assets/img/hotel-artis.jpg';
 import hotelArtisImageBig from '../assets/img/hotel-artis@2x.jpg';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Partners = () => {
+    useEffect(() => {
+        gsap.from('.partners', {
+            duration: 0.4,
+            y: '100',
+            opacity: 0,
+            ease: 'ease-in-out',
+            scrollTrigger: {
+                trigger: '.partners',
+                start: 'top 90%',
+                end: 'bootom 20%',
+                toggleActions: 'restart complete reverse reset',
+            },
+        });
+    }, []);
+
     return (
         <section className='partners container' id='partners'>
             <span className='text-id'>partnerzy</span>
