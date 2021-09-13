@@ -11,7 +11,7 @@ const Testimonials = () => {
     const [nextSlide, setNextSlide] = useState(100);
 
     const handleNextSlide = () => {
-        if (nextSlide > 200) {
+        if (nextSlide > 100) {
             setNextSlide(0);
         } else {
             setNextSlide(nextSlide + 100);
