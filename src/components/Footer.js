@@ -23,8 +23,8 @@ const Footer = () => {
                         <div className='footer-divider'>
                             <h3 className='footer-title'>Gdzie nas znajdziesz? </h3>
                             <p className='footer-social-media'>
-                                <img src={fbIcon} className='footer-social-media-img'></img>
-                                <a href='#' className='footer-social-media-link'>
+                                <img src={fbIcon} className='footer-social-media-img' alt='ikonka facebook'></img>
+                                <a href='#start' className='footer-social-media-link'>
                                     MiMTrans - usługi transportowe
                                 </a>
                             </p>
@@ -102,6 +102,7 @@ const Footer = () => {
                                 target='_blank'
                                 title='aplikacja mobilna e-podróżnik'
                                 className='btn btn-secondary btn-app'
+                                rel='noreferrer'
                             >
                                 pobierz aplikacje z googleplay
                             </a>
@@ -115,13 +116,13 @@ const Footer = () => {
                 </p>
                 <p className='copyright'>
                     Projekt i wdrożenie{' '}
-                    <a href='http://criscode.eu' className='copyright-link'>
+                    <a href='http://criscode.eu' className='copyright-link' rel='noreferrer'>
                         Krzysztof Grudzień
                     </a>
                 </p>
             </div>
             <button className='btn btn-up'>
-                <img src={arrowRightIcon}></img>
+                <img src={arrowRightIcon} alt='strzałka do góry'></img>
             </button>
         </footer>
     );

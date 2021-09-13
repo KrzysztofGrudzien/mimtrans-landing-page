@@ -56,7 +56,11 @@ const Testimonials = () => {
                     onClick={handlePrevSlide}
                 />
                 {slides.map((slide, i) => (
-                    <article className='slider-content' style={{ transform: `translateX(${i * -100 + nextSlide}%)` }}>
+                    <article
+                        className='slider-content'
+                        style={{ transform: `translateX(${i * -100 + nextSlide}%)` }}
+                        key={i}
+                    >
                         <h3 className='slider-content-title'>{slide.title}</h3>
                         <p className='slider-content-description'>{slide.description}</p>
                         <footer className='slider-content-footer'>

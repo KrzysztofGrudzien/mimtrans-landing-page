@@ -3,8 +3,6 @@ import mapaImageBig from '../assets/img/mapa-radziejowic@2x.jpg';
 import envelopIconWhite from '../assets/img/envelop-icon-white.svg';
 import turnIcon from '../assets/img/turn-icon.svg';
 import snowIcon from '../assets/img/snow-icon.svg';
-import coffeeIcon from '../assets/img/coffee-icon.svg';
-import wifiIcon from '../assets/img/wifi-icon.svg';
 import toiletIcon from '../assets/img/toilet-icon.svg';
 import busGreenImage from '../assets/img/bus-zielony.jpg';
 import { useState, useEffect } from 'react';
@@ -92,7 +90,12 @@ const Services = () => {
                     Zapewniamy regularny sprawny transport mieszkańcom Mszczonowa, Radziejowic, Żabiej Woli, Żyrardowa,
                     Nadarzyna i Raszyna.
                 </p>
-                <img src={mapaImageSmall} alt='zdjęcie mapy Radziejowic' className='services-img' />
+                <img
+                    src={mapaImageSmall}
+                    srcSet={`${mapaImageSmall} 300w, ${mapaImageBig} 768w, ${mapaImageBig} 1280w`}
+                    alt='zdjęcie mapy Radziejowic'
+                    className='services-img'
+                />
             </div>
             <div className='services-vehicles'>
                 <span className='services-subtitle'>Dostępne samochody</span>
@@ -103,15 +106,15 @@ const Services = () => {
                             className={isFlippedCardOne ? 'services-card-wrapper' : 'services-card-wrapper is-flipped'}
                         >
                             <div className='services-card-face services-card-face-front'>
-                                <h3 className='services-card-title'>Samochody typu bus</h3>
-                                <p className='services-card-description'>
+                                <h3 className='services-card-title'>Busy</h3>
+                                <div className='services-card-description'>
                                     <ul className='services-list'>
-                                        <li className='services-list-item'>Przewóz osób</li>
-                                        <li className='services-list-item'>Wynajem busów</li>
+                                        <li className='services-list-item'>Wynajem busów z kierowcą</li>
+                                        <li className='services-list-item'>Wynajem busów bez kierowcy</li>
                                         <li className='services-list-item'>Przewozy pracownicze</li>
                                         <li className='services-list-item'>Obsługa linii autobusowych</li>
                                     </ul>
-                                </p>
+                                </div>
                                 <div className='services-gallery'>
                                     <img
                                         src={busGreenImage}
@@ -137,17 +140,6 @@ const Services = () => {
                                             alt='ikonka klimatyzacji'
                                             className='services-card-footer-img'
                                         />
-                                        <img
-                                            src={coffeeIcon}
-                                            alt='ikonka buffetu'
-                                            className='services-card-footer-img'
-                                        />
-                                        <img src={wifiIcon} alt='ikonka wifi' className='services-card-footer-img' />
-                                        <img
-                                            src={toiletIcon}
-                                            alt='ikonka toalety'
-                                            className='services-card-footer-img'
-                                        />
                                     </p>
                                     <img
                                         src={turnIcon}
@@ -157,15 +149,10 @@ const Services = () => {
                                 </footer>
                             </div>
                             <div className='services-card-face services-card-face-back'>
-                                <h3 className='services-card-title'>Transport publiczny</h3>
-                                <p className='services-card-description'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, vel, magnam
-                                    deleniti voluptatem est vero necessitatibus beatae impedit odio consequuntur
-                                    laboriosam accusantium nam magni iusto! Ipsam, fugiat! Similique, tempora nobis?
-                                </p>
+                                <h3 className='services-card-title'>Przewóz osób i wynajem</h3>
                                 <footer className='services-card-footer'>
                                     <p className='services-card-footer-description'>
-                                        Liczba miejsc - 30-60 + (kierowca) + pilot
+                                        Liczba miejsc - do 8 + (kierowca)
                                     </p>
                                     <img
                                         src={turnIcon}
@@ -181,14 +168,14 @@ const Services = () => {
                             className={isFlippedCardTwo ? 'services-card-wrapper' : 'services-card-wrapper is-flipped'}
                         >
                             <div className='services-card-face services-card-face-front'>
-                                <h3 className='services-card-title'>Autokary wycieczkowe</h3>
-                                <p className='services-card-description'>
+                                <h3 className='services-card-title'>Autokary i busy wycieczkowe</h3>
+                                <div className='services-card-description'>
                                     <ul className='services-list'>
                                         <li className='services-list-item'>Przewóz osób</li>
                                         <li className='services-list-item'>Wynajem autokarów</li>
                                         <li className='services-list-item'>Wycieczki krajowe i zagraniczne</li>
                                     </ul>
-                                </p>
+                                </div>
                                 <div className='services-gallery'>
                                     <img
                                         src={busGreenImage}
@@ -215,12 +202,6 @@ const Services = () => {
                                             className='services-card-footer-img'
                                         />
                                         <img
-                                            src={coffeeIcon}
-                                            alt='ikonka buffetu'
-                                            className='services-card-footer-img'
-                                        />
-                                        <img src={wifiIcon} alt='ikonka wifi' className='services-card-footer-img' />
-                                        <img
                                             src={toiletIcon}
                                             alt='ikonka toalety'
                                             className='services-card-footer-img'
@@ -235,15 +216,8 @@ const Services = () => {
                             </div>
                             <div className='services-card-face services-card-face-back'>
                                 <h3 className='services-card-title'>Wycieczki</h3>
-                                <p className='services-card-description'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, vel, magnam
-                                    deleniti voluptatem est vero necessitatibus beatae impedit odio consequuntur
-                                    laboriosam accusantium nam magni iusto! Ipsam, fugiat! Similique, tempora nobis?
-                                </p>
                                 <footer className='services-card-footer'>
-                                    <p className='services-card-footer-description'>
-                                        Liczba miejsc - 30-60 + (kierowca) + pilot
-                                    </p>
+                                    <p className='services-card-footer-description'>Liczba miejsc - 23-52 z kierowcą</p>
                                     <img
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
@@ -260,12 +234,12 @@ const Services = () => {
                             }
                         >
                             <div className='services-card-face services-card-face-front'>
-                                <h3 className='services-card-title'>Samochody ciężarowe</h3>
-                                <p className='services-card-description'>
+                                <h3 className='services-card-title'>Transport publiczny</h3>
+                                <div className='services-card-description'>
                                     <ul className='services-list'>
-                                        <li className='services-list-item'>Przewóz towarów</li>
+                                        <li className='services-list-item'>Obsługa linii komunikacyjnych</li>
                                     </ul>
-                                </p>
+                                </div>
                                 <div className='services-gallery'>
                                     <img
                                         src={busGreenImage}
@@ -292,12 +266,6 @@ const Services = () => {
                                             className='services-card-footer-img'
                                         />
                                         <img
-                                            src={coffeeIcon}
-                                            alt='ikonka buffetu'
-                                            className='services-card-footer-img'
-                                        />
-                                        <img src={wifiIcon} alt='ikonka wifi' className='services-card-footer-img' />
-                                        <img
                                             src={toiletIcon}
                                             alt='ikonka toalety'
                                             className='services-card-footer-img'
@@ -311,15 +279,10 @@ const Services = () => {
                                 </footer>
                             </div>
                             <div className='services-card-face services-card-face-back'>
-                                <h3 className='services-card-title'>Transport ciężki</h3>
-                                <p className='services-card-description'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, vel, magnam
-                                    deleniti voluptatem est vero necessitatibus beatae impedit odio consequuntur
-                                    laboriosam accusantium nam magni iusto! Ipsam, fugiat! Similique, tempora nobis?
-                                </p>
+                                <h3 className='services-card-title'>Transport publiczny</h3>
                                 <footer className='services-card-footer'>
                                     <p className='services-card-footer-description'>
-                                        Liczba miejsc - 30-60 + (kierowca) + pilot
+                                        Liczba miejsc - 23-52 bez kierowcy + miejsca stojące
                                     </p>
                                     <img
                                         src={turnIcon}
