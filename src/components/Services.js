@@ -30,7 +30,7 @@ const Services = () => {
     useEffect(() => {
         gsap.from('.services', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {

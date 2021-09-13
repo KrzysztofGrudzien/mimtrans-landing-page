@@ -29,7 +29,7 @@ const Testimonials = () => {
     useEffect(() => {
         gsap.from('.testimonials', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {

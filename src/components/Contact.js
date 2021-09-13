@@ -9,7 +9,7 @@ const Contact = () => {
     useEffect(() => {
         gsap.from('.contact', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {
