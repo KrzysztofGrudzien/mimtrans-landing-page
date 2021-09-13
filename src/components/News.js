@@ -1,12 +1,18 @@
 import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
+import closeIcon from '../assets/img/close-icon.svg';
 
 const News = () => {
     const { isOpenNews, toggleNewsState } = useContext(AppContext);
 
     return (
         <article className={isOpenNews ? 'news' : 'news hide'}>
-            <button className='btn news-btn' onClick={toggleNewsState}></button>
+            <img
+                src={closeIcon}
+                className='btn news-btn'
+                alt='ikonka zamykająca aktualności'
+                onClick={toggleNewsState}
+            />
             <h2 className='news-title'>Aktualności dotyczące kursowania połączeń autobusowych</h2>
             <ul className='news-list'>
                 <li className='news-list-item'>

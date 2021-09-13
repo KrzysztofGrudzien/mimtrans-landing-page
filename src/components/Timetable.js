@@ -1,4 +1,5 @@
 import pdfIcon from '../assets/img/pdf@2x.png';
+import closeIcon from '../assets/img/close-icon-dark.svg';
 import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
 
@@ -7,7 +8,12 @@ const Timetable = () => {
 
     return (
         <div className={isOpenTimetable ? 'timetable flex' : 'timetable flex hide'}>
-            <button className='btn timetable-btn' onClick={toggleTimetableState}></button>
+            <img
+                src={closeIcon}
+                className='btn news-btn'
+                alt='ikonka zamykająca aktualności'
+                onClick={toggleTimetableState}
+            />
             <div className='timetable-buses'>
                 <h3 className='timetable-title'>Rozkład jazdy linii autobusowych</h3>
                 <div className='timetable-cards'>
