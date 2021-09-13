@@ -1,5 +1,3 @@
-import mapaImageSmall from '../assets/img/mapa.jpg';
-import mapaImageBig from '../assets/img/mapa@2x.jpg';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -9,7 +7,7 @@ const Contact = () => {
     useEffect(() => {
         gsap.from('.contact', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {
@@ -37,17 +35,18 @@ const Contact = () => {
                 </p>
             </div>
             <div className='divider'>
-                <div class='mapouter'>
-                    <div class='gmap_canvas'>
+                <div className='mapouter'>
+                    <div className='gmap_canvas'>
                         <iframe
                             width='100%'
                             height='400'
                             id='gmap_canvas'
                             src='https://maps.google.com/maps?q=Nowa%20Buk%C3%B3wka,%20ul.%20Rumiankowa%2041%2096-321%20%C5%BBabia%20Wola&t=&z=13&ie=UTF8&iwloc=&output=embed'
-                            frameborder='0'
+                            frameBorder='0'
                             scrolling='no'
-                            marginheight='0'
-                            marginwidth='0'
+                            marginHeight='0'
+                            marginWidth='0'
+                            title='google map'
                         ></iframe>
                     </div>
                 </div>

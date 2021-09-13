@@ -11,16 +11,6 @@ export const slides = [
         subtitle: '"Dom Pracy Twórczej w Radziejowice"',
     },
     {
-        title: 'Stowarzyszenie "SZANSA" w Żabiej Woli',
-        description:
-            'Zarząd Stowarzyszenia "SZANSA" w Żabiej Woli gorąco i serdecznie dziękuję Panu Jerzemu Wiśniewskiemu. W imieniu naszego Stowarzyszenia pragniemy warazić głęboką wdzięczność za ofiarowaną pomoc i życzliwość',
-        image: imageOne,
-        image: imageOne,
-        alt: 'miniaturka zdjęcia referencji ze Stowarzyszenie "SZANSA" w Żabiej Woli',
-        name: 'Małgorzata Kozicka - prezes stowarzyszenia',
-        subtitle: 'Stowarzyszenie "SZANSA" w Żabiej Woli',
-    },
-    {
         title: 'Szkoła Podstawowa im. Kawalerów Orderu Uśmiechu w Józefinie',
         description:
             'Dyrektor, Grono Pedagogiczne oraz Uczniowie Szkoła Podstawowa im. Kawalerów Orderu Uśmiechu w Józefinie serdecznie dziękują panu Jerzemu Wiśniewskiemu',

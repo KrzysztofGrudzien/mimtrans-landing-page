@@ -11,7 +11,7 @@ const Testimonials = () => {
     const [nextSlide, setNextSlide] = useState(100);
 
     const handleNextSlide = () => {
-        if (nextSlide > 200) {
+        if (nextSlide > 100) {
             setNextSlide(0);
         } else {
             setNextSlide(nextSlide + 100);
@@ -29,7 +29,7 @@ const Testimonials = () => {
     useEffect(() => {
         gsap.from('.testimonials', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {
@@ -56,7 +56,11 @@ const Testimonials = () => {
                     onClick={handlePrevSlide}
                 />
                 {slides.map((slide, i) => (
-                    <article className='slider-content' style={{ transform: `translateX(${i * -100 + nextSlide}%)` }}>
+                    <article
+                        className='slider-content'
+                        style={{ transform: `translateX(${i * -100 + nextSlide}%)` }}
+                        key={i}
+                    >
                         <h3 className='slider-content-title'>{slide.title}</h3>
                         <p className='slider-content-description'>{slide.description}</p>
                         <footer className='slider-content-footer'>

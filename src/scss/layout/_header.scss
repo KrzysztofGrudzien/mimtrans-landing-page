@@ -12,6 +12,12 @@
         display: flex;
         padding-left: 2rem;
 
+        @media (max-width: 400px) {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
         &-item {
             align-items: center;
             display: flex;
@@ -23,8 +29,14 @@
                 cursor: pointer;
             }
 
+            &:nth-child(3) {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+
             &:nth-child(2) {
-                @media (max-width: 400px) {
+                @media (max-width: 1024px) {
                     display: none;
                 }
             }
@@ -102,6 +114,19 @@
 
             &-img {
                 margin-right: 2rem;
+            }
+
+            &-header {
+                margin-right: 2rem;
+
+                @media (min-width: 1281px) {
+                    display: none;
+                }
+
+                @media (max-width: 400px) {
+                    margin-top: 2rem;
+                    width: 100%;
+                }
             }
         }
     }

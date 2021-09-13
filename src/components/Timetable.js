@@ -1,4 +1,5 @@
 import pdfIcon from '../assets/img/pdf@2x.png';
+import closeIcon from '../assets/img/close-icon-dark.svg';
 import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
 
@@ -7,7 +8,12 @@ const Timetable = () => {
 
     return (
         <div className={isOpenTimetable ? 'timetable flex' : 'timetable flex hide'}>
-            <button className='btn timetable-btn' onClick={toggleTimetableState}></button>
+            <img
+                src={closeIcon}
+                className='btn news-btn'
+                alt='ikonka zamykająca aktualności'
+                onClick={toggleTimetableState}
+            />
             <div className='timetable-buses'>
                 <h3 className='timetable-title'>Rozkład jazdy linii autobusowych</h3>
                 <div className='timetable-cards'>
@@ -21,6 +27,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1PUDBSpbnv6LbJ30ezW0DGcrGGIwEflVT/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>
@@ -36,6 +43,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1z3aWLq3rwGvszMeWOw2ngVoFss6P0ziZ/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>
@@ -50,6 +58,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1exRA4d5wDwNGQsqY5syUqbrVZxIPTKvi/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>
@@ -70,6 +79,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1TOqdoDDc_4aUysinO8Ra1N0y-L74Mrhk/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>
@@ -85,6 +95,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1c-8CQ_HW0usce5OdCZJ7sWlb8DWmwWgt/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>
@@ -99,6 +110,7 @@ const Timetable = () => {
                             <a
                                 href='https://drive.google.com/file/d/1SXqIbtpnuS4HTnlxCaUBsHEO2E_aseJW/view?usp=sharing'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <img src={pdfIcon} alt='ikona pobierz pdf' />
                             </a>

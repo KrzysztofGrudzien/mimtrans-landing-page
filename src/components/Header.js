@@ -31,6 +31,13 @@ const Header = () => {
                             mimtrans@o2.pl
                         </a>
                     </li>
+                    <button
+                        className='btn btn-secondary nav-bar-time-table-toggle nav-bar-time-table-toggle-header'
+                        onClick={toggleTimetableState}
+                    >
+                        <img src={calendarIcon} alt='ikona kalendarza' className='nav-bar-time-table-toggle-img' />{' '}
+                        Rozkład jazdy i taryfa biletowa
+                    </button>
                 </ul>
             </div>
             <div className='header-main-content-wrapper'>

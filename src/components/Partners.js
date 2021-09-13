@@ -13,7 +13,7 @@ const Partners = () => {
     useEffect(() => {
         gsap.from('.partners', {
             duration: 0.4,
-            y: '100',
+            y: '-100',
             opacity: 0,
             ease: 'ease-in-out',
             scrollTrigger: {
@@ -34,7 +34,7 @@ const Partners = () => {
             </div>
             <div className='partners-cards flex'>
                 <div className='partners-card'>
-                    <a href='http://palacradziejowice.pl/' target='_blank' className='partners-link'>
+                    <a href='http://palacradziejowice.pl/' target='_blank' rel='noreferrer' className='partners-link'>
                         Dom Pracy Twórczej w Radziejowicach
                     </a>
                     <div className='partners-card-image-wrapper'>
@@ -48,7 +48,7 @@ const Partners = () => {
                     </div>
                 </div>
                 <div className='partners-card'>
-                    <a href='http://www.artis-loft.pl/' target='_blank' className='partners-link'>
+                    <a href='http://www.artis-loft.pl/' target='_blank' rel='noreferrer' className='partners-link'>
                         Hotel Artis-Loft w Radziejowicach
                     </a>
                     <div className='partners-card-image-wrapper'>
@@ -62,7 +62,7 @@ const Partners = () => {
                     </div>
                 </div>
                 <div className='partners-card'>
-                    <a href='http://www.hotelpanorama.pl/' target='_blank' className='partners-link'>
+                    <a href='http://www.hotelpanorama.pl/' target='_blank' rel='noreferrer' className='partners-link'>
                         Hotel Panorama w Mszczonowie
                     </a>
                     <div className='partners-card-image-wrapper'>
