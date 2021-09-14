@@ -105,39 +105,19 @@ const About = () => {
             <div className='about-cards flex'>
                 <article className='about-card'>
                     <img src={healthIconWhite} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>
-                    <p className='about-card-description'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
-                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
-                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
-                    </p>
+                    <h3 className='about-card-title'>Doświadczenie i bezpieczeństwo</h3>{' '}
                 </article>
                 <article className='about-card'>
                     <img src={transportIconWhite} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Kompleksowe usługi logistyczne</h3>
-                    <p className='about-card-description'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
-                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
-                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
-                    </p>
+                    <h3 className='about-card-title'>Kompleksowe usługi przewozowe</h3>
                 </article>
                 <article className='about-card'>
                     <img src={experienceIconWhite} alt='icon' className='about-card-icon' />
                     <h3 className='about-card-title'>Wysoka jakość i konkurencyjne ceny</h3>
-                    <p className='about-card-description'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
-                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
-                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
-                    </p>
                 </article>
                 <article className='about-card'>
                     <img src={touristIconWhite} alt='icon' className='about-card-icon' />
-                    <h3 className='about-card-title'>Dla kogo nasze usługi?</h3>
-                    <p className='about-card-description'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id illum debitis vitae architecto
-                        nisi! Suscipit, nobis debitis aperiam deserunt necessitatibus quidem magnam quam recusandae
-                        fugit, reprehenderit laboriosam, consequatur accusamus. Nisi. lorem
-                    </p>
+                    <h3 className='about-card-title'>Indywidualne podejście do klienta i zlecenia</h3>
                 </article>
             </div>
         </section>
