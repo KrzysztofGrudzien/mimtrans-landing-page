@@ -20,10 +20,11 @@ const News = () => {
                     <p className='news-description'>
                         W związku z pracami nad nową stroną mimtrans.pl przez pewien czas mogą wystepować pewne
                         utrudnienia związane z niektórymi funkcjonalnościami strony. np: problem z wysyłaniem maila po
-                        przez strone mimtrans.pl, animacjami, brak możliwości powiększania zdjęć czy stylami na
-                        niektórych urządzeniach mobilnych. Prosimy o wyrozumiałość i cierpliowść. Rozkłady jazdy i
-                        taryfy biletowe są do pobrania po przez kliknięcie we właściwą ikonkę PDF. Na chwilę obecną
-                        kontakt mailowy jest możliwy po przez kliknięcie na link w prawym górnym rogu lub skopiowaniu
+                        przez strone mimtrans.pl, animacjami, brak możliwości powiększania zdjęć, nie działający slider
+                        czy stylami na niektórych urządzeniach mobilnych. Wszystkie powyżej wymienione problemy będą
+                        usuwane z dnia na dzień. Prosimy o wyrozumiałość i cierpliowość. Rozkłady jazdy i taryfy
+                        biletowe są do pobrania po przez kliknięcie we właściwą ikonkę PDF. Na chwilę obecną kontakt
+                        mailowy jest możliwy po przez kliknięcie na link w prawym górnym rogu lub skopiowaniu
                         (mimtrans@o2.pl) i użycie innego serwisu obsługującego pocztę e-mail typu: poczta.wp.pl,
                         poczta.tlen.pl, gmail itp. W razie pytań proszę dzwonić pod numer 602 516 919.
                     </p>
