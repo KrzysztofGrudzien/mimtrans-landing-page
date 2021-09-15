@@ -19,6 +19,10 @@ const Contact = () => {
         });
     }, []);
 
+    const handleSendEmail = e => {
+        e.preventDefault();
+    };
+
     return (
         <section className='contact container flex' id='contact'>
             <span className='text-id'>kontakt</span>
@@ -56,23 +60,30 @@ const Contact = () => {
                     <div className='divider'>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Twoje imię' className='form-input' />
+                            <input type='text' placeholder='Twoje imię' className='form-input' name='name' />
                         </div>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Adres E-mail' className='form-input' />
+                            <input type='text' placeholder='Adres E-mail' className='form-input' name='email' />
                         </div>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Temat' className='form-input' />
+                            <input type='text' placeholder='Temat' className='form-input' name='subject' />
                         </div>
                     </div>
                     <div className='divider'>
                         <div>
                             <label htmlFor=''></label>
-                            <textarea type='text' placeholder='Treść wiadomości' className='form-textarea' />
+                            <textarea
+                                type='text'
+                                placeholder='Treść wiadomości'
+                                className='form-textarea'
+                                name='message'
+                            />
                         </div>
-                        <button className='btn btn-secondary form-btn'>wyślij formularz</button>
+                        <button className='btn btn-secondary form-btn' type='submit' onClick={handleSendEmail}>
+                            wyślij formularz
+                        </button>
                     </div>
                 </form>
             </div>
