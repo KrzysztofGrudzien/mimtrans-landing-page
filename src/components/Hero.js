@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className='hero'>
             <News />
-            <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' />
+            {/* <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' /> */}
             <div className='hero-slider'>
                 <div className='hero-slider-image-box'>
                     <h2 className='hero-slider-title reset-skew'>
@@ -15,14 +15,13 @@ const Hero = () => {
                     </h2>
                     <h3 className='hero-slider-subtitle reset-skew'>przewóz osób</h3>
                     <p className='hero-slider-description reset-skew'>
-                        Zapewniamy regularny sprawny transport mieszkańcom Mszczonowa, Radziejowic, Żabiej Woli,
-                        Żyrardowa, Nadarzyna i Raszyna.
+                        Strona w przebudowie - za wszelkie utrudnienia przepraszamy i prosimy o wyrozumiałość.
                     </p>
                 </div>
                 <img src={busGreyImage} alt='bus' className='hero-slider-image' />
                 <div className='hero-slider-image-box'></div>
             </div>
-            <img src={arrowRightWhiteIcon} alt='' className='hero-slide-right' />
+            {/* <img src={arrowRightWhiteIcon} alt='' className='hero-slide-right' /> */}
         </div>
     );
 };

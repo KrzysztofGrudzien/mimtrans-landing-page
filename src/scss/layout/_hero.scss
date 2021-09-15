@@ -40,11 +40,19 @@
 
         &-subtitle {
             padding-left: 2rem;
+
+            @media (max-width: 1024px) {
+                padding-left: 0;
+            }
         }
 
         &-description {
             padding-top: 2rem;
             padding-left: 4.5rem;
+
+            @media (max-width: 1024px) {
+                padding-left: 0;
+            }
         }
 
         &-image-box:first-child {
@@ -60,6 +68,12 @@
             padding: 10rem;
             transform: skewX(-20deg);
             width: 70rem;
+
+            @media (max-width: 1024px) {
+                left: 0;
+                transform: skewX(0);
+                width: 100%;
+            }
         }
 
         &-image-box:last-child {
@@ -76,10 +90,22 @@
             position: absolute;
             right: -2rem;
             z-index: 10;
+
+            @media (max-width: 1600px) {
+                width: 50%;
+            }
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
     }
 }
 
 .reset-skew {
     transform: skewX(20deg);
+
+    @media (max-width: 1024px) {
+        transform: skewX(0deg);
+    }
 }
