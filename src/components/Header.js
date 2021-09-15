@@ -125,13 +125,6 @@ const Header = () => {
                                 </a>
                             </li>
                         </ul>
-                        <button
-                            className='btn btn-secondary nav-bar-mobile-time-table-toggle'
-                            onClick={toggleTimetableState}
-                        >
-                            <img src={calendarIcon} alt='ikona kalendarza' className='nav-bar-time-table-toggle-img' />
-                            Rozkład jazdy i taryfa biletowa
-                        </button>
                     </nav>
                 </div>
             </div>

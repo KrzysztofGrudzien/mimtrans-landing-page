@@ -48,7 +48,7 @@ const Testimonials = () => {
                 <span className='testimonials-subtitle'>Co mówią o nas?</span>
                 <h2 className='contact-title'>Rekomendacje mówią same za siebie</h2>
             </div>
-            <div className='slider'>
+            <div className='slider slider-tablet-desktop'>
                 <img
                     src={arrowLeftIcon}
                     className='slider-prev'
@@ -78,6 +78,18 @@ const Testimonials = () => {
                     alt='Strzałka przewijająca następne rekomendacje'
                     onClick={handleNextSlide}
                 />
+            </div>
+            <div className='slider-mobile'>
+                {slides.map((slide, i) => (
+                    <article className='slider-mobile-content' key={i}>
+                        <h3 className='slider-mobile-title'>{slide.title}</h3>
+                        <p className='slider-mobile-description'>
+                            <span className='slider-mobile-quotation-mark'>"</span>
+                            {slide.description}
+                            <span className='slider-mobile-quotation-mark'>"</span>
+                        </p>
+                    </article>
+                ))}
             </div>
         </section>
     );
