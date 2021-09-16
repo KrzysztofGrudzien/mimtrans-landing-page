@@ -1,3 +1,4 @@
+import email from 'emailjs-com';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -21,6 +22,14 @@ const Contact = () => {
 
     const handleSendEmail = e => {
         e.preventDefault();
+        email
+            .sendForm('service_mndbp4a', 'template_004wjgy', e.target, 'user_BEZTTlF9BF4sl45ECgQfd')
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            });
     };
 
     return (
@@ -56,7 +65,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='form-wrapper'>
-                <form action='' className='form flex'>
+                <form action='' className='form flex' onSubmit={handleSendEmail}>
                     <div className='divider'>
                         <div>
                             <label htmlFor=''></label>
@@ -81,9 +90,7 @@ const Contact = () => {
                                 name='message'
                             />
                         </div>
-                        <button className='btn btn-secondary form-btn' type='submit' onClick={handleSendEmail}>
-                            wyślij formularz
-                        </button>
+                        <input className='btn btn-secondary form-btn' type='submit' value='wyślij wiadomość' />
                     </div>
                 </form>
             </div>
