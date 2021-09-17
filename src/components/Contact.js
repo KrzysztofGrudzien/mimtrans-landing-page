@@ -1,10 +1,16 @@
 import email from 'emailjs-com';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+    const [inputNameValue, setInputNameValue] = useState('');
+    const [inputEmailValue, setInputEmailValue] = useState('');
+    const [inputSubjectValue, setInputSubjectValue] = useState('');
+    const [inputTextValue, setInputTextValue] = useState('');
+    const [isValidNameValue, setIsValidNameValue] = useState(true);
+
     useEffect(() => {
         gsap.from('.contact', {
             duration: 0.4,
@@ -26,10 +32,39 @@ const Contact = () => {
             .sendForm('service_mndbp4a', 'template_004wjgy', e.target, 'user_BEZTTlF9BF4sl45ECgQfd')
             .then(res => {
                 console.log(res);
+                setIsValidNameValue(!isValidNameValue);
+                setInputEmailValue('');
+                setInputSubjectValue('');
+                setInputNameValue('');
+                setInputTextValue('');
+
+                setTimeout(() => {
+                    setIsValidNameValue(isValidNameValue);
+                }, 5000);
             })
             .catch(err => {
                 console.log(err);
             });
+    };
+
+    const handleInputName = e => {
+        const inputNameValue = e.target.value;
+        setInputNameValue(inputNameValue);
+    };
+
+    const handleInputEmail = e => {
+        const inputEmailValue = e.target.value;
+        setInputEmailValue(inputEmailValue);
+    };
+
+    const handleInputSubject = e => {
+        const inputSubjectValue = e.target.value;
+        setInputSubjectValue(inputSubjectValue);
+    };
+
+    const handleInputText = e => {
+        const inputTextValue = e.target.value;
+        setInputTextValue(inputTextValue);
     };
 
     return (
@@ -69,28 +104,60 @@ const Contact = () => {
                     <div className='divider'>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Twoje imię' className='form-input' name='name' />
+                            <input
+                                type='text'
+                                placeholder='Twoje imię'
+                                className='form-input'
+                                name='name'
+                                onChange={handleInputName}
+                                value={inputNameValue}
+                                required
+                            />
                         </div>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Adres E-mail' className='form-input' name='email' />
+                            <input
+                                type='email'
+                                placeholder='Adres E-mail'
+                                className='form-input'
+                                name='email'
+                                onChange={handleInputEmail}
+                                value={inputEmailValue}
+                                required
+                                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+                            />
                         </div>
                         <div>
                             <label htmlFor=''></label>
-                            <input type='text' placeholder='Temat' className='form-input' name='subject' />
+                            <input
+                                type='text'
+                                placeholder='Temat'
+                                className='form-input'
+                                name='subject'
+                                onChange={handleInputSubject}
+                                value={inputSubjectValue}
+                                required
+                            />
                         </div>
                     </div>
                     <div className='divider'>
                         <div>
                             <label htmlFor=''></label>
                             <textarea
-                                type='text'
                                 placeholder='Treść wiadomości'
                                 className='form-textarea'
+                                onChange={handleInputText}
+                                value={inputTextValue}
+                                required
                                 name='message'
-                            />
+                            ></textarea>
                         </div>
-                        <input className='btn btn-secondary form-btn' type='submit' value='wyślij wiadomość' />
+                        <input
+                            className={isValidNameValue ? 'btn btn-secondary form-btn' : 'btn btn-primary form-btn'}
+                            type='submit'
+                            value={isValidNameValue ? 'wyślij wiadomość' : 'wiadomość wysłano'}
+                            disabled={!isValidNameValue}
+                        />
                     </div>
                 </form>
             </div>
