@@ -29,7 +29,12 @@ const Contact = () => {
     const handleSendEmail = e => {
         e.preventDefault();
         email
-            .sendForm('service_mndbp4a', 'template_004wjgy', e.target, 'user_BEZTTlF9BF4sl45ECgQfd')
+            .sendForm(
+                process.env.REACT_APP_EMAIL_SERVICE,
+                process.env.REACT_APP_EMAIL_TEMPLATE,
+                e.target,
+                process.env.REACT_APP_EMAIL_USER_ID,
+            )
             .then(res => {
                 console.log(res);
                 setIsValidNameValue(!isValidNameValue);
