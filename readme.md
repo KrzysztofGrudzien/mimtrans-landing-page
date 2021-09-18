@@ -3,8 +3,11 @@
 A commercial website a type of landing page for the company that transport people to Warsaw and not only.
 
 ## Fundamental Technologies
- - React.js
+ - React.js based on React Hooks
  - Sass
+ - EmailJS
+ - React-Smooth-Scroll
+ - GSAP
 
 ## CMS and Database
  - Firebase Firestore
