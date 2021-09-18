@@ -2,6 +2,7 @@ import mobileAppImageSmall from '../assets/img/mobile-app-image.jpg';
 import mobileAppImageBig from '../assets/img/mobile-app-image@2x.jpg';
 import fbIcon from '../assets/img/fb-icon.svg';
 import arrowRightIcon from '../assets/img/arrow-right.svg';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -121,9 +122,9 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
-            <button className='btn btn-up'>
+            <Link className='btn btn-up' to='start' spy={true} smooth={true} duration={500}>
                 <img src={arrowRightIcon} alt='strzałka do góry'></img>
-            </button>
+            </Link>
         </footer>
     );
 };

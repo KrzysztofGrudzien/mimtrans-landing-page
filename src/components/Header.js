@@ -8,12 +8,13 @@ import logo from '../assets/img/logo.svg';
 import Timetable from './Timetable';
 import { useContext } from 'react';
 import { AppContext } from '../context/appContext';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     const { isOpenMenu, toggleTimetableState, toggleNewsState, toggleMenuState } = useContext(AppContext);
 
     return (
-        <header className='header' id='start'>
+        <header className='header'>
             <Timetable />
             <div className='header-info container'>
                 <ul className='header-list'>
@@ -51,34 +52,83 @@ const Header = () => {
                     <nav className='nav-bar'>
                         <ul className='nav-bar-list'>
                             <li className='nav-bar-list-item'>
-                                <a href='#start' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='start'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
                                     Start
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#about' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='about'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
                                     O nas
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#services' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='services'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
                                     Usługi
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#partners' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='partners'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
+                                    {' '}
                                     Partnerzy
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#testimonials' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='testimonials'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
                                     Rekomendacje
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-list-item'>
-                                <a href='#contact' className='nav-bar-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='contact'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-list-item-link'
+                                >
                                     Kontakt
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <button className='btn btn-secondary nav-bar-time-table-toggle' onClick={toggleTimetableState}>
@@ -95,34 +145,82 @@ const Header = () => {
                         ></img>
                         <ul className='nav-bar-mobile-list'>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#start' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='start'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     Start
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#about' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='about'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-90}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     O nas
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#services' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='services'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-90}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     Usługi
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#partners' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='partners'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-90}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     Partnerzy
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#testimonials' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='testimonials'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-90}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     Rekomendacje
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-bar-mobile-list-item'>
-                                <a href='#contact' className='nav-bar-mobile-list-item-link'>
+                                <Link
+                                    activeClass='active'
+                                    to='contact'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-90}
+                                    duration={500}
+                                    className='nav-bar-mobile-list-item-link'
+                                >
                                     Kontakt
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>

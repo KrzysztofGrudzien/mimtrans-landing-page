@@ -8,7 +8,7 @@ import Services from './Services';
 
 const Main = () => {
     return (
-        <main>
+        <main className='main'>
             <Hero />
             <About />
             <Services />

@@ -5,7 +5,7 @@ import News from './News';
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='start'>
             <News />
             {/* <img src={arrowLeftWhiteIcon} alt='' className='hero-slide-left' /> */}
             <div className='hero-slider'>

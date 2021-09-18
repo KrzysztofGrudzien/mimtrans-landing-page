@@ -31,7 +31,7 @@ const About = () => {
         <section className='about container flex' id='about'>
             <span className='text-id'>o nas</span>
             <div className='divider'>
-                <span className='about-subtitle'>Kilka słów o nas?</span>
+                <span className='about-subtitle'>Kilka słów o nas</span>
                 <h2 className='about-title'>Nasza krótka historia</h2>
                 <p className='about-text'>
                     Jesteśmy firmą z doświadczeniem - działamy w branży od 1992 roku. Przez ten czas zdążyliśmy
@@ -58,7 +58,7 @@ const About = () => {
                 />
             </div>
             <div className='divider'>
-                <span className='about-subtitle'>Stawiamy na rozwój?</span>
+                <span className='about-subtitle'>Stawiamy na rozwój!</span>
                 <h2 className='about-title'>Plany na przyszłość</h2>
                 <p className='about-text'>
                     Cały czas unowocześniamy naszą flotę pojazdów, tak aby spełniała oczekiwania coraz bardziej
