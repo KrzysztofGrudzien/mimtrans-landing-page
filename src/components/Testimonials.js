@@ -45,7 +45,7 @@ const Testimonials = () => {
         <section className='testimonials container' id='testimonials'>
             <span className='text-id'>rekomendacje</span>
             <div className='divider'>
-                <span className='testimonials-subtitle'>Co mówią o nas?</span>
+                <span className='testimonials-subtitle'>Co mówią o nas!</span>
                 <h2 className='contact-title'>Rekomendacje mówią same za siebie</h2>
             </div>
             <div className='slider slider-tablet-desktop'>

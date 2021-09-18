@@ -16,6 +16,11 @@ const News = () => {
             <h2 className='news-title'>Aktualności dotyczące kursowania połączeń autobusowych</h2>
             <ul className='news-list'>
                 <li className='news-list-item'>
+                    <span className='news-date'>17.09.2021</span>
+                    <p className='news-description'>Kontakt mailowy po przez stronę mimtrans.pl został uruchomiony.</p>
+                </li>
+
+                <li className='news-list-item'>
                     <span className='news-date'>14.09.2021</span>
                     <p className='news-description'>
                         W związku z pracami nad nową stroną mimtrans.pl przez pewien czas mogą wystepować pewne
