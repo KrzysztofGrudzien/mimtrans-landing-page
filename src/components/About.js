@@ -74,11 +74,8 @@ const About = () => {
                 <span className='about-subtitle'>Kto zarządza firmą?</span>
                 <h2 className='about-title'>Właściciele firmy</h2>
                 <p className='about-text'>
-                    MiM Trans USŁUGI TRANSPORTOWE Jerzy Wiśniewski są P. Jerzy Wiśniewski i P. Tadeusz Pałka Sprawna
-                    komunikacja wymaga bardzo dobrych pracowników obsługi technicznej. Dzięki naszym mechanikom pojazdy
-                    naszej firmy są zawsze sprawne, bezpieczne, w pełni gotowe do drogi. Zatrudnieni w naszej firmie
-                    kierowcy są doskonale wyszkoleni i posiadają duże doświadczenie w prowadzeniu pojazdów.
-                    <br />
+                    Właścicielami MiM Trans USŁUGI TRANSPORTOWE Jerzy Wiśniewski są P. Jerzy Wiśniewski i P. Tadeusz
+                    Pałka
                     <br />
                 </p>
             </div>
@@ -86,10 +83,15 @@ const About = () => {
                 <span className='about-subtitle'>Dlaczego my?</span>
                 <h2 className='about-title'>Co nas wyróżnia?</h2>
                 <p className='about-text'>
-                    MiM Trans USŁUGI TRANSPORTOWE Jerzy Wiśniewski są P. Jerzy Wiśniewski i P. Tadeusz Pałka Sprawna
-                    komunikacja wymaga bardzo dobrych pracowników obsługi technicznej. Dzięki naszym mechanikom pojazdy
-                    naszej firmy są zawsze sprawne, bezpieczne, w pełni gotowe do drogi. Zatrudnieni w naszej firmie
-                    kierowcy są doskonale wyszkoleni i posiadają duże doświadczenie w prowadzeniu pojazdów.
+                    Sprawna komunikacja wymaga bardzo dobrych pracowników obsługi technicznej. Dzięki naszym mechanikom
+                    pojazdy naszej firmy są zawsze sprawne, bezpieczne, w pełni gotowe do drogi. Zatrudnieni w naszej
+                    firmie kierowcy są doskonale wyszkoleni i posiadają duże doświadczenie w prowadzeniu pojazdów.{' '}
+                    <br />
+                    <br /> Nasza firma dysponuje nowoczesnymi, bezpiecznymi i wygodnymi autobusami różnego typu. Od
+                    małych dziewięcio i dwudziesto kilku osobowych busów do dużych ponad pięćdziesięcio osobowych
+                    autokarów turystycznych. Organizujemy m.in. przewozy dzieci i młodzieży na wycieczki, przewozy
+                    pracownicze, przewozy okazjonalne (na bankiety, konferencje, wesela i pogrzeby), wycieczki krajowe.
+                    Do każdego Klienta i do każdego zlecenia podchodzimy indywidualnie.
                     <br />
                     <br />
                 </p>
