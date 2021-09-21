@@ -5,6 +5,9 @@ import turnIcon from '../assets/img/turn-icon.svg';
 import snowIcon from '../assets/img/snow-icon.svg';
 import toiletIcon from '../assets/img/toilet-icon.svg';
 import busGreenImage from '../assets/img/bus-zielony.jpg';
+import busBlueImage from '../assets/img/bus-niebieski2.jpg';
+import busGreenWideImage from '../assets/img/bus-zielony-szeroki.jpg';
+import busOrangeWideImage from '../assets/img/bus-pomaranczowy-szeroki.jpg';
 import { useState, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -122,7 +125,7 @@ const Services = () => {
                                         className='services-gallery-img'
                                     />
                                     <img
-                                        src={busGreenImage}
+                                        src={busBlueImage}
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
@@ -247,12 +250,12 @@ const Services = () => {
                                         className='services-gallery-img'
                                     />
                                     <img
-                                        src={busGreenImage}
+                                        src={busGreenWideImage}
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
                                     <img
-                                        src={busGreenImage}
+                                        src={busOrangeWideImage}
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
