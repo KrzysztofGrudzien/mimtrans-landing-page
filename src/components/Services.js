@@ -37,7 +37,7 @@ const Services = () => {
             scrollTrigger: {
                 trigger: '.services',
                 start: 'top 90%',
-                end: 'bootom 20%',
+                end: 'bootom 50%',
                 toggleActions: 'restart complete reverse reset',
             },
         });
