@@ -153,6 +153,7 @@ const Header = () => {
                                     offset={-200}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     Start
                                 </Link>
@@ -166,6 +167,7 @@ const Header = () => {
                                     offset={-90}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     O nas
                                 </Link>
@@ -179,6 +181,7 @@ const Header = () => {
                                     offset={-90}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     Usługi
                                 </Link>
@@ -192,6 +195,7 @@ const Header = () => {
                                     offset={-90}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     Partnerzy
                                 </Link>
@@ -205,6 +209,7 @@ const Header = () => {
                                     offset={-90}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     Rekomendacje
                                 </Link>
@@ -218,6 +223,7 @@ const Header = () => {
                                     offset={-90}
                                     duration={500}
                                     className='nav-bar-mobile-list-item-link'
+                                    onClick={toggleMenuState}
                                 >
                                     Kontakt
                                 </Link>
