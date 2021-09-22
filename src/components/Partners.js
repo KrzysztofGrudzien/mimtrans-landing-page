@@ -41,7 +41,7 @@ const Partners = () => {
                         <img
                             src={houseImageSmall}
                             srcSet={`${houseImageSmall} 300w, ${houseImageBig} 768w, ${houseImageBig} 1280w`}
-                            alt='zdjęcie domu pracy twórczej w Radziejowicach'
+                            alt='zdjęcie domu pracy twórczej w Radziejowicach.'
                             className='partners-img'
                         />
                         <div className='partners-card-gradient'></div>
@@ -55,7 +55,7 @@ const Partners = () => {
                         <img
                             src={hotelArtisImageSmall}
                             srcSet={`${hotelArtisImageSmall} 300w, ${hotelArtisImageBig} 768w, ${hotelArtisImageBig} 1280w`}
-                            alt='zdjęcie hotelu Artis w Radziejowicach'
+                            alt='zdjęcie hotelu Artis w Radziejowicach.'
                             className='partners-img'
                         />
                         <div className='partners-card-gradient'></div>
@@ -69,7 +69,7 @@ const Partners = () => {
                         <img
                             src={hotelPanoramaImageSmall}
                             srcSet={`${hotelPanoramaImageSmall} 300w, ${hotelPanoramaImageBig} 768w, ${hotelPanoramaImageBig} 1280w`}
-                            alt='zdjęcie hotelu Panorama w Mszczonowie'
+                            alt='zdjęcie hotelu Panorama w Mszczonowie.'
                             className='partners-img'
                         />
                         <div className='partners-card-gradient'></div>
