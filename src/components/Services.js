@@ -104,7 +104,7 @@ const Services = () => {
                 <span className='services-subtitle'>Dostępne samochody</span>
                 <h2 className='services-title'>Nasza flota samochodowa</h2>
                 <div className='services-cards flex'>
-                    <div className='services-card' onClick={handleIsCardFlippedCardOne}>
+                    <div className='services-card'>
                         <div
                             className={isFlippedCardOne ? 'services-card-wrapper' : 'services-card-wrapper is-flipped'}
                         >
@@ -148,6 +148,7 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardOne}
                                     />
                                 </footer>
                             </div>
@@ -161,12 +162,13 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardOne}
                                     />
                                 </footer>
                             </div>
                         </div>
                     </div>
-                    <div className='services-card' onClick={handleIsCardFlippedCardTwo}>
+                    <div className='services-card'>
                         <div
                             className={isFlippedCardTwo ? 'services-card-wrapper' : 'services-card-wrapper is-flipped'}
                         >
@@ -214,6 +216,7 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardTwo}
                                     />
                                 </footer>
                             </div>
@@ -225,12 +228,13 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardTwo}
                                     />
                                 </footer>
                             </div>
                         </div>
                     </div>
-                    <div className='services-card' onClick={handleIsCardFlippedCardThree}>
+                    <div className='services-card'>
                         <div
                             className={
                                 isFlippedCardThree ? 'services-card-wrapper' : 'services-card-wrapper is-flipped'
@@ -245,17 +249,17 @@ const Services = () => {
                                 </div>
                                 <div className='services-gallery'>
                                     <img
-                                        src={busGreenImage}
-                                        alt='miniaturka zielonego busa mimtrans'
-                                        className='services-gallery-img'
-                                    />
-                                    <img
                                         src={busGreenWideImage}
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
                                     <img
                                         src={busOrangeWideImage}
+                                        alt='miniaturka zielonego busa mimtrans'
+                                        className='services-gallery-img'
+                                    />
+                                    <img
+                                        src={busGreenImage}
                                         alt='miniaturka zielonego busa mimtrans'
                                         className='services-gallery-img'
                                     />
@@ -278,6 +282,7 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardThree}
                                     />
                                 </footer>
                             </div>
@@ -291,6 +296,7 @@ const Services = () => {
                                         src={turnIcon}
                                         alt='ikonka odwróć karte'
                                         className='services-card-footer-img'
+                                        onClick={handleIsCardFlippedCardThree}
                                     />
                                 </footer>
                             </div>
