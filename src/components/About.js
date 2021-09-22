@@ -21,7 +21,7 @@ const About = () => {
             scrollTrigger: {
                 trigger: '.about',
                 start: 'top 90%',
-                end: 'bootom 20%',
+                end: 'bootom 50%',
                 toggleActions: 'restart complete reverse reset',
             },
         });
